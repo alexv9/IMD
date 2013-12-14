@@ -1,0 +1,78 @@
+/* 
+
+Function: IMD Main style sheet
+Version: 0.1
+Device: Small Screens
+Author: Alexander Vonnemann
+Last changes: 2013/11/22
+
+*/
+
+/* *********************
+   Table of contents
+************************
+
+-> Page setup
+-> Header
+-> Content
+-> Slide, Maps & Songs
+-> Contact information
+-> Footer
+-> 2x Screen Images
+
+*/
+
+/*
+*****************
+Page setup
+*****************
+*/
+
+
+
+/* Header */
+
+.teaser h1, #content .teaser h1, #content #bigtitle .teaser h1 {
+    font-size:2.1rem; 
+    padding-top:0;
+}
+.teaser p, #content .teaser p, #content #bigtitle .teaser p {
+  font-size:1.2rem;
+}
+#content #bigtitle .teaser h1 {
+  color:#464952;
+}
+#content #bigtitle .teaser p {
+  color:#727679;
+}
+
+/* Content */
+
+#page {
+  padding-top:180px;
+}
+#page.has-stage {
+  padding-top:540px;
+}
+#header, #header #stagebg {
+  height:180px;
+}
+#header.has-stage, #header.has-stage #stagebg {
+    height: 540px;
+}
+header#pagenav {
+  padding-top:16px;
+}
+table.shortinfotable tr th, table.shortinfotable tr td {
+  font-size:0.9rem;
+}
+#content .maintext p {
+  font-size:1.2rem;/* 18 / 14 */;
+  -moz-column-count:1; 
+  -webkit-column-count:1; 
+  column-count:1;
+}
+
+#project #imageteaser {
+  position:inherit;
+}
