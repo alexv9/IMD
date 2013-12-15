@@ -12,8 +12,12 @@ Last changes: 2013/11/22
    Sass Config
 ************************ */
 
+@import "settings";
+@import "normalize";
+@import "foundation";
+
 $background: #e6eaed;
-$color-first: #464952; /* Headlines */
+$color-first: #464952;
 
 
 /* *********************
