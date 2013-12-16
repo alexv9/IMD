@@ -1,10 +1,8 @@
 /* 
 
-Function: IMD Main style sheet
-Version: 0.1
+Function: Website main style sheet
 Device: General
 Author: Alexander Vonnemann
-Last changes: 2013/11/22
 
 */
 
@@ -16,8 +14,7 @@ Last changes: 2013/11/22
 @import "normalize";
 @import "foundation";
 
-$background: #e6eaed;
-$color-first: #464952;
+
 
 
 /* *********************
@@ -66,19 +63,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: $background;
-  font-family: 'hda_regular', sans-serif;
-  font-size: 14px !important;
-  color: #44474e;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   -webkit-font-smoothing: antialiased;
 }
 body.noscroll {
@@ -90,13 +74,13 @@ h1, h2, h3, h4, h5, h6, p {
   font-family:'hda_regular', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-  color:$color-first;
+  color:$headline-color;
 }
 h2 {
   font-size:2.5rem; /* 36 / 14 */
 }
 p {
-  color:#727679;
+  color:$maintext-color;
 }
 .row {
   max-width:980px;
@@ -272,7 +256,7 @@ a.close {
     height: 637px;
 }
 #stagebg .wrapper {
-  background:#cd0627;
+  background:$header-background;
   height:100%;
 }
 #content {
@@ -296,34 +280,6 @@ header#pagenav {
 }
 header#pagenav a {
   border-bottom:0;
-}
-.top-bar {
-  background:transparent;
-}
-.top-bar-section ul li > a, .contain-to-grid, .top-bar, .top-bar.expanded .title-area, .top-bar-section ul, .top-bar-section ul li > a, .top-bar-section ul li > a.button {
-   background:none !important; 
-   font-size:1rem;
-}
-.top-bar-section li a:not(.button) {
-  background:none !important;
-  padding:0 8px;
-  margin:0 2px;
-  font-weight:normal;
-}
-.top-bar-section li a:not(.button).active, .top-bar-section li a:not(.button) span.active {
-  font-weight:bold;
-}
-.top-bar-section li.has-dropdown a:hover, .top-bar-section li.has-dropdown a.active:hover {
-  border-radius:none !important;
-}
-.top-bar .name h1 a {
-  padding-right:36px;
-}
-.top-bar-section .has-dropdown > a {
-  padding-right:26px !important;
-}
-.top-bar-section .has-dropdown > a:after {
-  border: none;
 }
 .top-bar-section .has-dropdown{
   background: url(../img/dropdow_arrow.png) no-repeat right 8px center !important;
@@ -394,7 +350,7 @@ padding:20px;
   height:520px;
   display:table;
   width:100%;
-  background:#cd0627;
+  background:$splitter-background;
 }
 #content .splitter p {
   text-align:center;
