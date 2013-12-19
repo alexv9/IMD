@@ -33,8 +33,8 @@ Page setup
 /* Header */
 
 .teaser h1, #content .teaser h1, #content #bigtitle .teaser h1 {
-    font-size:2.1rem; 
-    padding-top:0;
+    font-size:3.1rem; 
+    padding-top:50px;
 }
 .teaser p, #content .teaser p, #content #bigtitle .teaser p {
   font-size:1.2rem;

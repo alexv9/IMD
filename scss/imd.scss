@@ -119,7 +119,7 @@ button.whitebtn, .button.whitebtn {
 }
 button.whitebtn:hover, .button.whitebtn:hover {
   background:#ffffff;
-  color:#464952;  
+  color:#cd0627;
 }
 button.whitebtn.cta, .button.whitebtn.cta {
   font-family:'hda_bold', sans-serif;
@@ -209,7 +209,7 @@ a.close {
   border-bottom: 1px dotted #ffffff;
 }
 .teaser h1, #content .teaser h1 {
-    font-size:4.1rem; /* 48 / 14 */
+    font-size:6.1rem; /* 48 / 14 */
     padding-top:80px;
 }
 #header .teaser h1 {
@@ -281,6 +281,15 @@ header#pagenav {
 header#pagenav a {
   border-bottom:0;
 }
+
+/* MARGIN ADJUSTMENT /////////////////////*/
+
+.top-bar-section ul {
+  margin-top: 1px;
+}
+
+/* /////////////////////////////////////*/
+
 .top-bar-section .has-dropdown{
   background: url(../img/dropdow_arrow.png) no-repeat right 8px center !important;
 }
@@ -300,6 +309,18 @@ padding:20px;
    color:#cd0627; 
 }
 
+/* LOGO ADJUSTMENT /////////////////////*/
+li.name h1 a img {
+  vertical-align: top;
+  padding-top: 6px;
+  margin-right: 5px;
+}
+
+li.name h1 a {
+  font-size: 20px;
+}
+/* /////////////////////////////////////*/
+
 /* Content */
 
 #content img {
@@ -313,6 +334,7 @@ padding:20px;
   column-gap: 1.875rem;
   -webkit-column-gap: 1.875rem;
   -moz-column-gap: 1.875rem;
+  margin-bottom: 60px;
 }
 #content .row {
   padding-bottom:40px;
@@ -369,7 +391,7 @@ padding:20px;
 }
 #content .splitter p .splittercit-autor {
   padding-top:40px;
-  font-size:1rem;
+  font-size:1.2rem;
   font-style:normal;
 }
 #content p, #content ul {
@@ -394,11 +416,13 @@ padding:20px;
 }
 .tabs dd > a:hover {
   background:transparent;
-  border-bottom:1px solid #464952;
+  color:#cd0627;
+  border-bottom:1px solid #cd0627;
 }
 .tabs dd.active a {
   font-weight:bold;
-  border-bottom:1px solid #464952;
+  color:#cd0627;
+  border-bottom:1px solid #cd0627;
 }
 .tabs-content > .content {
   padding-top:60px;
