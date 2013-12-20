@@ -28,7 +28,7 @@ $(document).ready(function(){
          +'         </li>'
          +'          <li><a href="berufsausblick.html">Berufsausblick</a></li>'
          +'          <li><a href="bewerbung.html">Bewerbung</a></li>'
-         +'          <li><a href="events.html">Events</a></li>'
+         +'          <li><a href="#">Events</a></li>'
          +'          <li><a href="magazin.html">Magazin</a></li>'
          +'       </ul>'
          +'     </section>'
