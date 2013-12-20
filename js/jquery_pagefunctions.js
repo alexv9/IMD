@@ -12,5 +12,39 @@ $(document).ready(function() {
 	$('#scrolltocontent').click(function(){
 	        $('html, body').animate({scrollTop:$('#content').position().top}, 'slow');
 	});
+	
+	//marco 15.12.13 
+	
 
+	if ($(window).width() < 767) {
+		$('.tabsSmall').css('display', 'inline-block');
+	}
+	else {
+		$('.tabsBig').css('display', 'inline-block');
+	}
+
+	$(window).on('resize', function() {
+		if ($(window).width() < 767) {
+			$('.tabsBig').css('display', 'none');
+			$('.tabsSmall').css('display', 'inline-block');				
+		} else {
+			$('.tabsBig').css('display', 'inline-block');
+			$('.tabsSmall').css('display', 'none');
+		}
+	});
+
+	
+	$(document).scroll(function() {
+		var scroll = $(document).scrollTop();
+		if(scroll >=550){	
+			$('#pagenav').css('background-color', 'black');
+			$('#mcfooter').css('z-index', '2');
+		}else{
+			$('#pagenav').css('background-color', 'transparent');
+			$('#mcfooter').css('z-index', '0');
+		}	
+	});
+
+	
+	
 });

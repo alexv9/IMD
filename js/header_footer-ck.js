@@ -1,1 +1,0 @@
-$(document).ready(function(){$("<p>Hello World!</p>").appendTo("footer")});
