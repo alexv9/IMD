@@ -399,6 +399,29 @@ li.name h1 a {
   line-height:2.1rem;
 }
 
+/*- Block Newsletter */
+
+.newsletter {
+  background:#cd0627;
+  padding-top:40px;
+}
+.newsletter ::-webkit-input-placeholder {
+  color:#ffffff;
+  opacity:1 !important;
+}
+.newsletter input[type="text"] {
+  background:transparent;
+  border:none;
+  font-size:2.5rem;
+  color:#ffffff;
+  height:100%;
+  box-shadow:none;
+  margin:0;
+}
+.newsletter .button {
+  margin-top:8px;
+}
+
 
 /* -Tabs */
 .tabs {
