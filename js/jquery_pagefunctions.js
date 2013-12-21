@@ -44,6 +44,8 @@ $(document).ready(function() {
 		}	
 	});
 
+	
+
 	// Stage sizing 16:9
 
 	var myPlayer = $("body").find("#stagevideo");    // Store the video object
@@ -80,6 +82,13 @@ $(document).ready(function() {
 	$(window).resize(mcfooterheight);
 	
 
+	// Mobile Nav Klick Background in Stage
+	$(".menu-icon a").click(function() {
+		var scroll = $(document).scrollTop();
+		if(scroll <=500){ 
+			$("#pagenav").toggleClass("scrollednav");
+		}
+	});
 	
 	
 });

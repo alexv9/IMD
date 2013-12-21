@@ -539,3 +539,11 @@ table.shortinfotable tr th, table.shortinfotable tr td {
 	border:2px solid #76797c !important;
 	color: #76797c !important;
 }
+
+@media screen and (max-width: $topbar-breakpoint){
+
+.top-bar-section li a:not(.button) {
+	padding:12px 12px !important;
+
+}
+}
