@@ -35,7 +35,7 @@ $(document).ready(function() {
 	
 	$(document).scroll(function() {
 		var scroll = $(document).scrollTop();
-		if(scroll >=500){	
+		if(scroll >=620){	
 			$('#pagenav').addClass('scrollednav');
 			$('#mcfooter').css('z-index', '2');
 		}else{
@@ -56,8 +56,8 @@ $(document).ready(function() {
 	    var width = $(window).width();
 	    var height = width * aspectRatio;
 
-      if(width <= 1130) {
-      	myPlayer.width("1130").height("636");
+      if(width <= 1333) {
+      	myPlayer.width("1333").height("750");
       	//$( "#page.has-stage" ).css( "padding-top", "636px" );
       	//$( "#header.has-stage" ).css( "height", "636px" );
       }else {

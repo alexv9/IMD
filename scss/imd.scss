@@ -64,7 +64,7 @@ body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  background:transparent;
+  background:red;
 }
 body.noscroll {
   overflow: hidden;
@@ -169,7 +169,7 @@ a.close {
   padding-top:300px;
 }
 #page.has-stage {
-  padding-top:637px;
+  padding-top:750px;
 }
 @media only screen and (min-width: 40em) {
   .show-for-medium-up.title {
@@ -253,7 +253,7 @@ a.close {
   max-width:inherit;
 }
 #header.has-stage, #header.has-stage #stagebg {
-    height: 637px;
+    height: 750px;
 }
 #stagebg .wrapper {
   background:$header-background;
