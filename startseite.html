@@ -17,7 +17,48 @@
     
 
   <header id="pagenav">
-      <!--HEADER.JS goes here -->
+      
+        <div class="row">
+         <nav class="top-bar" data-topbar>
+              <ul class="title-area">
+                <!-- Title Area -->
+                <li class="name">
+                  <h1>
+                    <a href="#">
+                      <img src="img/hda_logo_white.svg" alt="h_da">
+                      <span class="regular show-for-small-only title">IMD</span>
+                      <span class="regular show-for-medium-up title">Interactive Media Design</span>
+                    </a>
+                  </h1>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+              </ul> 
+              <section class="top-bar-section">
+                <ul class="left">
+                  <li class="has-dropdown">
+                    <a href="studium.html">Studium</a>
+                    <ul class="dropdown">
+                      <li><a href="studienverlauf.html">Studienverlauf</a></li>
+                      <li><a href="projekte.html">Projekte</a></li>
+                      <li><a href="kurse.html">Kurse</a></li>
+                      <li><a href="dozenten.html">Dozenten</a></li>
+                      <li><a href="ausstattung.html">Ausstattung</a></li>
+                    </ul>
+                  </li>
+                   <li><a href="berufsausblick.html">Berufsausblick</a></li>
+                   <li><a href="bewerbung.html">Bewerbung</a></li>
+                   <li><a href="#">Events</a></li>
+                   <li><a href="magazin.html">Magazin</a></li>
+                </ul>
+              </section>
+              <section class="top-bar-section">
+                <ul class="right">
+                   <li><a href="#"><span class="active">De</span> / En</a></li>
+                </ul>
+              </section>
+            </nav>
+     </div>
+
   </header>
 
   <header id="header" class="has-stage">
@@ -40,15 +81,15 @@
     </header>
 
     <div id="stagebg">
-        <div class="wrapper">
-          <video id="example_video_1" class="video-js vjs-default-skin"
-           preload="auto" width="1133" height="637" loop autoplay
+
+          <video id="stagevideo" class="video-js vjs-default-skin"
+           preload="auto" loop autoplay
           poster="http://vonax.org/imd/video/videobg.jpg"
           data-setup='{"example_option":true}'>
-         <source src="http://vonax.org/imd/video/testvideo.mp4" type='video/mp4' />
-         <source src="http://vonax.org/imd/video/testvideo.ogv" type='video/ogg' />
+         <source src="video/testvideo.mp4" type='video/mp4' />
+         <source src="imd/video/testvideo.ogv" type='video/ogg' />
         </video>
-     </div>
+
     </div>
 
 
@@ -286,8 +327,58 @@
       </div>
 
     <footer id="footer">
-      <!-- FOOTER.JS goes here -->
+      
+         <div class="row">
+               <div class="large-4 medium-4 ftcolumn columns">
+                   <h5>Passt der Studiengang zu mir?</h5>
+                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam </p>
+                   <a href="#" class="button">Studienberater starten</a>
+                 </div>
+               <div class="large-4 medium-4 ftcolumn columns">
+                   <h5>Studienberatung</h5>
+                    <div class="row">
+                       <div class="large-6 medium-6 columns">
+                         <ul class="vcard">
+                           <li class="fn">Andrea Krajewski</li>
+                           <li class="txtsmall">Studienfachberaterin</li>
+                           <li class="tel">+49 6151 169 450</li>
+                           <li class="street-address hide">Max-Planck-Straße 2</li>
+                           <li class="hide"><span class="zip">64807</span>, <span class="state">Dieburg</span></li>
+                           <li class="state hide">Hessen</li>
+                         </ul>
+                         <a href="#" class="button">Kontakt</a>
+                       </div>
+                       <div class="large-6 medium-6 columns">
+                         <ul class="vcard">
+                           <li class="fn">Enes Ünal</li>
+                           <li class="txtsmall">Studentischer Berater</li>
+                           <li>@imd</li>
+                         </ul>
+                         <a href="#" class="button">Kontakt</a>
+                       </div>
+                     </div>
+                 </div>
+                 <div class="large-4 medium-4 ftcolumn columns">
+                   <h5>In Verbindung bleiben</h5>
+                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam </p>
+                   <a href="#" class="sociallink facebook">Facebook</a>
+                   <a href="#" class="sociallink twitter">Twitter</a>
+                   <a href="#" class="sociallink vimeo">Vimeo</a>
+                 </div>
     </footer> 
+
+      <div class="newsletter">
+        <div class="row">
+        <form>
+          <div class="small-8 columns">
+             <input type="text" id="right-label" placeholder="Ihre E-Mail Adresse">
+          </div>
+          <div class="small-4 columns">
+             <a href="#" class="button whitebtn">Zum Bewerbungsreminder anmelden</a>
+          </div>
+      </form>
+      </div>
+      </div>
     
     </div>
 
@@ -299,6 +390,48 @@
  <div id="mcfooter">
 
       <div class="mcfooter-content wrapper">
+        <div class="row">
+          <div class="large-4 columns">
+            <img src="img/mediencampus_logo.png" alt="Mediencampus" class="mediencampuslogo" />
+          </div>
+          <div class="large-8 columns">
+            <p>Am Mediencampus der Hochschule Darmstadt werden Studierende in neun Studiengängen auf verschiedene Beschäftigungsfelder in der Medienindustrie vorbereitet. <a href="http://mediencampus.h-da.de/">Mehr über den Mediencampus.</a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <hr/>
+           <div class="large-3 columns">
+            <h6>Interactive Media Design</h6>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
+            <a href="#" class="button">Zum Studiengang</a>
+          </div>
+          <div class="large-3 columns">
+            <h6>Animation and Game</h6>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
+            <a href="#" class="button">Zum Studiengang</a>
+          </div>
+          <div class="large-3 columns">
+            <h6>Video Motion Pictures</h6>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
+            <a href="#" class="button">Zum Studiengang</a>
+          </div>
+          <div class="large-3 columns">
+            <h6>Sound and Music Production</h6>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
+            <a href="#" class="button">Zum Studiengang</a>
+          </div>
+        </div>
+        <div class="row">
+        <hr>
+                 <div class="large-8 small-8 columns copyright">
+                   <p class="txtsmall">© 2014 h_da - Ein <a href="#">IMD-Projekt</a></p>
+                 </div>
+                 <div class="large-4 small-4 columns txtright copyright">
+                   <p class="txtsmall"><a href="#">Impressum</a></p>
+                 </div>
+               </div>
+        </div>
 
       </div>
 
@@ -306,8 +439,6 @@
     </div>
 
     <script src="js/jquery.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/footer.js"></script>
     <script src="js/jquery_pagefunctions.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>

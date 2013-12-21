@@ -7,12 +7,12 @@ Last changes: 2013/12/07
 
 */
 
+
+
 $(document).ready(function() {
 
-	$('#scrolltocontent').click(function(){
-	        $('html, body').animate({scrollTop:$('#content').position().top}, 'slow');
-	});
-	
+
+
 	//marco 15.12.13 
 	
 
@@ -32,18 +32,41 @@ $(document).ready(function() {
 			$('.tabsSmall').css('display', 'none');
 		}
 	});
-
 	
 	$(document).scroll(function() {
 		var scroll = $(document).scrollTop();
-		if(scroll >=550){	
-			$('#pagenav').css('background-color', 'black');
+		if(scroll >=500){	
+			$('#pagenav').addClass('scrollednav');
 			$('#mcfooter').css('z-index', '2');
 		}else{
-			$('#pagenav').css('background-color', 'transparent');
+			$('#pagenav').removeClass('scrollednav');
 			$('#mcfooter').css('z-index', '0');
 		}	
 	});
+
+	// Stage sizing 16:9
+
+	var myPlayer = $("body").find("#stagevideo");    // Store the video object
+    var aspectRatio = 9/16; // Make up an aspect ratio
+
+
+    function resizeVideoJS(){
+	    var width = $(window).width();
+	    var height = width * aspectRatio;
+
+      if(width <= 1130) {
+      	myPlayer.width("1130").height("636");
+      	//$( "#page.has-stage" ).css( "padding-top", "636px" );
+      	//$( "#header.has-stage" ).css( "height", "636px" );
+      }else {
+      	myPlayer.width(width).height(height);
+      	//$( "#page.has-stage" ).css( "padding-top", height );
+      	//$( "#header.has-stage" ).css( "height", height );
+    }}
+
+    $(document).ready(resizeVideoJS);
+    $(window).resize(resizeVideoJS);
+	
 
 	
 	
