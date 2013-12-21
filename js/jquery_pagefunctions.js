@@ -66,6 +66,18 @@ $(document).ready(function() {
 
     $(document).ready(resizeVideoJS);
     $(window).resize(resizeVideoJS);
+
+    // Mediencampus Footer Height Parallax
+
+    function mcfooterheight(){
+
+    var mcfooterHeight = $("#mcfooter").css('height');
+    $( "#page" ).css( "padding-bottom", mcfooterHeight );
+
+	}
+
+	$(document).ready(mcfooterheight);
+	$(window).resize(mcfooterheight);
 	
 
 	

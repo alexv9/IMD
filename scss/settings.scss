@@ -1042,7 +1042,6 @@ li.name h1 a img {
 li.name h1 a {
 	font-size:20px
 }
-
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;
 $topbar-title-font-size: rem-calc(17);
@@ -1096,7 +1095,7 @@ $topbar-divider-border-top: none;
 
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
-// $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+$topbar-arrows: false; //Set false to remove the triangle icon from the menu item
 
 //
 // TYPOGRAPHY
