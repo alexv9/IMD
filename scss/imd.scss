@@ -215,6 +215,7 @@ a.close {
 #header .teaser h1 {
    color:#ffffff;
    font-weight:bold; 
+   text-shadow: 0 0 8px #464952;
   font-family:'hda_bold', sans-serif;
 }
 #content #bigtitle .teaser h1 {
@@ -297,6 +298,7 @@ header#pagenav a {
 
 #content img {
   padding-bottom:40px;
+  width:100%;
 }
 #content .maintext p {
   font-size:1.2rem;/* 18 / 14 */;
@@ -357,6 +359,7 @@ header#pagenav a {
 #content .splitter p .cit, #content .splitter p .splittercit-autor {
   max-width:800px;
   display:block;
+  text-shadow: 0 0 8px #464952;
   font-size:2.1rem;/* 18 / 14 */
   line-height:3.1rem;
   margin:0 auto;
@@ -566,7 +569,8 @@ li.name h1 a {
   margin:0 auto;
 }
 .top-bar-section .dropdown.desktopbar li a {
-  color:#000000;
+  color:#464952;
+  padding:26px 12px !important;
   display:block;
 }
 
