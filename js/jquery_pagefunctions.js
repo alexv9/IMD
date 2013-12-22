@@ -100,7 +100,7 @@ $(document).ready(function() {
 
 	}
 
-	$(document).ready(mcfooterheight);
+	$(window).bind('load', mcfooterheight);
 	$(window).resize(mcfooterheight);
 	
 
