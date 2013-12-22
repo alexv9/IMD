@@ -10,6 +10,7 @@ Author: Alexander Vonnemann
    Sass Config
 ************************ */
 
+@import "themeconfig";
 @import "settings";
 @import "normalize";
 @import "foundation";
@@ -64,51 +65,28 @@ body {
   height: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
-  background:red;
 }
 body.noscroll {
   overflow: hidden;
   position:fixed;
 }
-
-h1, h2, h3, h4, h5, h6, p {
-  font-family:'hda_regular', sans-serif;
-}
-h1, h2, h3, h4, h5, h6 {
-  color:$headline-color;
-}
 h2 {
   font-size:2.5rem; /* 36 / 14 */
-}
-p {
-  color:$maintext-color;
-}
-.row {
-  max-width:980px;
 }
 .wrapper {
   max-width:1133px;
   margin:0 auto;
 }
 button, .button {
-  border:2px solid #7d8085 !important;
-  border-radius:6px;
-  -moz-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  -webkit-border-radius: 6px;
+  border:2px solid rgba($mainred, $maingreen, $mainblue, 0.8) !important;
   background:transparent;
-  -webkit-transition : border 300ms ease-out; 
-  -moz-transition : border 300ms ease-out;
-  -o-transition : border 300ms ease-out;
-  font-size:1rem;
+  border-radius:$global-radius;
   padding:0.6rem 1.2rem;
-  color:#44474e;
+  color:$primary-color;
 }
 button:hover, .button:hover {
-  background:transparent;
-  border:2px solid #cd0627 !important;
-  color:#cd0627 !important;
-  padding:0.6rem 1.2rem;
+  border:2px solid $primary-color !important;
+  color:#ffffff;
 }
 button.whitebtn, .button.whitebtn {
   border:2px solid #ffffff !important; 
@@ -129,24 +107,6 @@ button.whitebtn.cta, .button.whitebtn.cta {
 .headertxt button.whitebtn.cta, .headertxt .button.whitebtn.cta {
   margin-top:10px;
   padding:1rem 2rem;
-}
-hr {
-  border: solid #dadfe3;
-  border-width: 1px 0 0;
-  margin:40px 0;
-}
-a {
-  color:#464952;
-  padding-bottom:2px;
-  border-bottom:1px dotted #cd0627;
-  -webkit-transition : border 300ms ease-out; 
-  -moz-transition : border 300ms ease-out;
-  -o-transition : border 300ms ease-out;
-}
-a:hover {
-  color:#cd0627;
-  padding-bottom:2px;
-  border-bottom:1px solid #cd0627;
 }
 a.close {
   border:0;
@@ -215,7 +175,7 @@ a.close {
 #header .teaser h1 {
    color:#ffffff;
    font-weight:bold; 
-   text-shadow: 0 0 8px #464952;
+   text-shadow: 0 0 8px $body-font-color;
   font-family:'hda_bold', sans-serif;
 }
 #content #bigtitle .teaser h1 {
@@ -261,7 +221,7 @@ a.close {
 #content {
   position:relative;
   z-index:3;
-  background:#e6eaed;
+  background:#ffffff;
   border-bottom:2px solid #1d1d1e;
 }
 .cntwrapper {
@@ -285,7 +245,7 @@ header#pagenav {
   transition: background 0.5s linear;
 }
 header#pagenav.scrollednav {
-	background:rgba(177,43,17,0.95);	
+	background:rgba($mainred, $maingreen, $mainblue, 0.95);	
   border-bottom:1px solid #d5462a;
 }
 header#pagenav a {
@@ -360,7 +320,7 @@ header#pagenav a {
 #content .splitter p .cit, #content .splitter p .splittercit-autor {
   max-width:800px;
   display:block;
-  text-shadow: 0 0 8px #464952;
+  text-shadow: 0 0 8px $body-font-color;
   font-size:2.1rem;/* 18 / 14 */
   line-height:3.1rem;
   margin:0 auto;
@@ -378,11 +338,11 @@ header#pagenav a {
 /*- Block Newsletter */
 
 .newsletter {
-  background:#b12b11;
+  background:$primary-color;
   padding-top:50px;
 }
 .newsletter ::-webkit-input-placeholder {
-  color:#ffffff;
+  color:rgba(255,255,255,0.3);
   opacity:1 !important;
 }
 .newsletter input[type="text"] {

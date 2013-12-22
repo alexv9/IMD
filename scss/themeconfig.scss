@@ -1,0 +1,32 @@
+/* 
+
+Function: Color & general theme settings
+Author: Alexander Vonnemann & Marisa Wollner
+
+*/
+
+// university course corporate identity main color
+
+$mainred: 197;
+$maingreen: 42;
+$mainblue: 42;
+
+// theme default colors
+
+$primary-color: rgb($mainred, $maingreen, $mainblue);
+$secondary-color: #e7e7e7;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+ 
+$header-background: $primary-color;
+$splitter-background: $primary-color;
+
+$body-bg: #ffffff;
+$body-font-color: #727679;
+$body-font-family: 'hda_regular', sans-serif;;
+$body-font-weight: normal;
+$body-font-style: normal;
+
+
+
