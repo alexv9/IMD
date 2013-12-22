@@ -44,7 +44,20 @@ $(document).ready(function() {
 		}	
 	});
 
-	
+	// Stage Nav subnave 100% desktop version
+	function stagenavsub(){
+	    var width = $(window).width();
+
+	    if(width >= 930) {
+	    	$( ".dropdown" ).addClass("desktopbar");
+	    	$( ".has-dropdown" ).addClass("desktopbar");
+	    	$( ".top-bar" ).addClass("desktopbar");
+	    	$( ".liwrapper" ).addClass("active");
+	    }
+
+	}
+
+	$(document).ready(stagenavsub);
 
 	// Stage sizing 16:9
 

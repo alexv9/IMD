@@ -541,6 +541,37 @@ table.shortinfotable tr th, table.shortinfotable tr td {
 	color: #76797c !important;
 }
 
+/*Top Bar*/
+
+.top-bar-section li a:not(.button) {
+  padding:0 12px !important;
+}
+li.name h1 a img {
+  padding-bottom:5px;
+}
+li.name h1 a {
+  font-size:20px
+}
+.top-bar-section .dropdown.desktopbar {
+  background:#ffffff !important;
+  left:0;
+  width:100%;
+}
+.top-bar-section .has-dropdown.desktopbar, .top-bar.desktopbar {
+  position:static;
+}
+.top-bar-section .dropdown.desktopbar li {
+   width:auto;
+}
+.liwrapper.active {
+  display:table;
+  margin:0 auto;
+}
+.top-bar-section .dropdown.desktopbar li a {
+  color:#000000;
+  display:block;
+}
+
 @media screen and (max-width: $topbar-breakpoint){
 
 .top-bar-section li a:not(.button) {

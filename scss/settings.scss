@@ -1032,16 +1032,6 @@ $topbar-bg: $topbar-bg-color;
 $topbar-height: 96px;
 $topbar-margin-bottom: 0;
 
-// Special Settings
-.top-bar-section li a:not(.button) {
-	padding:0 12px !important;
-}
-li.name h1 a img {
-	padding-bottom:5px;
-}
-li.name h1 a {
-	font-size:20px
-}
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;
 $topbar-title-font-size: rem-calc(17);
