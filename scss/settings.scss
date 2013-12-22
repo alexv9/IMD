@@ -2,7 +2,7 @@
 // CHANGE THIS TO MODIFY THE GENERAL APPERANCE OF YOUR CORPORATE IDENTITY
 
 
-$secondary-color: #cd0627;
+$secondary-color: #d5462a;
 
 $header-background: $secondary-color;
 $splitter-background: $secondary-color;
@@ -1052,7 +1052,7 @@ $topbar-link-weight: normal;
 $topbar-link-font-size: rem-calc(17);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg-hover: rgba(218,223,227,0.1);
-// $topbar-link-bg-active: $primary-color;
+$topbar-link-bg-active: #d5462a;
 $topbar-link-bg-active-hover: none;
 // $topbar-link-font-family: $body-font-family;
 

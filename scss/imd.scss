@@ -285,7 +285,8 @@ header#pagenav {
   transition: background 0.5s linear;
 }
 header#pagenav.scrollednav {
-	background:rgba(172,177,181,0.95);	
+	background:rgba(177,43,17,0.95);	
+  border-bottom:1px solid #d5462a;
 }
 header#pagenav a {
   border-bottom:0;
@@ -377,8 +378,8 @@ header#pagenav a {
 /*- Block Newsletter */
 
 .newsletter {
-  background:#bec3c7;
-  padding-top:40px;
+  background:#b12b11;
+  padding-top:50px;
 }
 .newsletter ::-webkit-input-placeholder {
   color:#ffffff;
