@@ -35,12 +35,21 @@ $(document).ready(function() {
 	
 	$(document).scroll(function() {
 		var scroll = $(document).scrollTop();
-		if(scroll >=620){	
+		if ($("#header").hasClass("has-stage")) {
+		if(scroll >=600){	
 			$('#pagenav').addClass('scrollednav');
 			$('#mcfooter').css('z-index', '2');
 		}else{
 			$('#pagenav').removeClass('scrollednav');
 			$('#mcfooter').css('z-index', '0');
+		};} else {
+			if(scroll >=380){	
+			$('#pagenav').addClass('scrollednav');
+			$('#mcfooter').css('z-index', '2');
+		}else{
+			$('#pagenav').removeClass('scrollednav');
+			$('#mcfooter').css('z-index', '0');
+		};
 		}	
 	});
 
