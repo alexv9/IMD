@@ -61,6 +61,7 @@ $(document).ready(function() {
 	    	$( ".dropdown" ).addClass("desktopbar");
 	    	$( ".has-dropdown" ).addClass("desktopbar");
 	    	$( ".top-bar" ).addClass("desktopbar");
+			$( ".top-bar-section" ).addClass("desktopbar");
 	    	$( ".liwrapper" ).addClass("active");
 	    }
 

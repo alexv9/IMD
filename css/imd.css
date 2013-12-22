@@ -6012,7 +6012,7 @@ header#pagenav a {
 
 /*- Block Newsletter */
 .newsletter {
-  background: #c52a2a;
+  background: #d53939;
   padding-top: 50px; }
 
 .newsletter ::-webkit-input-placeholder {
@@ -6179,9 +6179,10 @@ li.name h1 a {
 .top-bar-section .dropdown.desktopbar {
   background: #ffffff !important;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px solid #dadfe3; }
 
-.top-bar-section .has-dropdown.desktopbar, .top-bar.desktopbar {
+.top-bar-section .has-dropdown.desktopbar, .top-bar.desktopbar, .top-bar-section.desktopbar {
   position: static; }
 
 .top-bar-section .dropdown.desktopbar li {

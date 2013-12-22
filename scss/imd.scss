@@ -339,7 +339,7 @@ header#pagenav a {
 /*- Block Newsletter */
 
 .newsletter {
-  background:$primary-color;
+  background:lighten($primary-color, 6%);
   padding-top:50px;
 }
 .newsletter ::-webkit-input-placeholder {
@@ -519,8 +519,9 @@ li.name h1 a {
   background:#ffffff !important;
   left:0;
   width:100%;
+  border-bottom:1px solid #dadfe3;
 }
-.top-bar-section .has-dropdown.desktopbar, .top-bar.desktopbar {
+.top-bar-section .has-dropdown.desktopbar, .top-bar.desktopbar, .top-bar-section.desktopbar {
   position:static;
 }
 .top-bar-section .dropdown.desktopbar li {
