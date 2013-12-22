@@ -166,7 +166,7 @@ a.close {
 }
 #page {
   position:relative;
-  padding-top:300px;
+  padding-top:500px;
 }
 #page.has-stage {
   padding-top:750px;
@@ -232,22 +232,20 @@ a.close {
   color:#ffffff;
 }
 #header {
-  height: 300px;
+  height: 500px;
   width: 100%;
   position: fixed;
   background:transparent;
   overflow:hidden;
   top:0;
   z-index:2;
-  height:300px;
 }
 #stagebg {
-  height: 300px;
+  height: 500px;
   position:fixed;
   top:0;
   width:100%;
   z-index:1;
-  height:300px;
 }
 #stagebg img {
   max-width:inherit;
