@@ -186,6 +186,7 @@ a.close {
   position:fixed;
   top:0;
   width:100%;
+  background:lighten($primary-color, 6%);
   z-index:1;
 }
 #stagebg img {
@@ -288,7 +289,7 @@ header#pagenav a {
   height:520px;
   display:table;
   width:100%;
-  background:$splitter-background;
+  background:lighten($primary-color, 6%);
 }
 #content .splitter p {
   text-align:center;
