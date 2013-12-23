@@ -2,13 +2,12 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 /* 
 
-Function: Website main style sheet
-Device: General
+Function: Website Style Root
 Author: Alexander Vonnemann
 
 */
 /* *********************
-   Sass Config
+   Include Sass Config
 ************************ */
 /* 
 
@@ -5705,6 +5704,9 @@ th.hide-for-touch {
   display: table-cell !important; }
 
 /* *********************
+   Include Main Style
+************************ */
+/* *********************
    Table of contents
 ************************
 
@@ -6203,3 +6205,80 @@ li.name h1 a {
 @media screen and (max-width: 930px) {
   .top-bar-section li a:not(.button) {
     padding: 12px 12px !important; } }
+/* *********************
+   Include Breakpoint Styles
+************************ */
+/* 
+
+Function: IMD Main style sheet
+Version: 0.1
+Device: Small Screens
+Author: Alexander Vonnemann
+Last changes: 2013/23/12
+
+*/
+/* *********************
+   Table of contents
+************************
+
+-> Page setup
+-> Header
+-> Content
+-> Slide, Maps & Songs
+-> Contact information
+-> Footer
+-> 2x Screen Images
+
+*/
+/*
+*****************
+Page setup
+*****************
+*/
+@media only screen and (max-width: 767px) {
+  /* Header */
+  .teaser h1, #content .teaser h1, #content #bigtitle .teaser h1 {
+    font-size: 3.1rem;
+    padding-top: 50px; }
+
+  .teaser p, #content .teaser p, #content #bigtitle .teaser p {
+    font-size: 1.2rem; }
+
+  #content #bigtitle .teaser h1 {
+    color: #464952; }
+
+  #content #bigtitle .teaser p {
+    color: #727679; }
+
+  /* Content */
+  #page {
+    padding-top: 300px; }
+
+  #page.has-stage {
+    padding-top: 300px; }
+
+  #header, #header #stagebg {
+    height: 300px; }
+
+  #header.has-stage, #header.has-stage #stagebg {
+    height: 540px; }
+
+  header#pagenav {
+    padding-top: 16px; }
+
+  table.shortinfotable tr th, table.shortinfotable tr td {
+    font-size: 0.9rem; }
+
+  #content .maintext p {
+    font-size: 1.2rem;
+    /* 18 / 14 */
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1; }
+
+  #content .splitter p .cit, #content .splitter p .splittercit-autor {
+    font-size: 1.4rem;
+    line-height: 2.0rem; }
+
+  #project #imageteaser {
+    position: inherit; } }
