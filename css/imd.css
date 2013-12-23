@@ -5914,7 +5914,7 @@ header#pagenav {
   position: fixed;
   top: 0;
   /*padding:26px 0;*/
-  z-index: 999;
+  z-index: 99;
   width: 100%;
   border-bottom: 1px solid rgba(218, 223, 227, 0.4);
   background: rgba(218, 223, 227, 0.1);
