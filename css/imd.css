@@ -5927,7 +5927,8 @@ header#pagenav {
 
 header#pagenav.scrollednav {
   background: rgba(197, 42, 42, 0.95);
-  border-bottom: 1px solid #c52a2a; }
+  border-bottom: 1px solid #c52a2a;
+  box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.4); }
 
 header#pagenav a {
   border-bottom: 0; }
