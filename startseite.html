@@ -86,7 +86,7 @@
 
           <video id="stagevideo" class="video-js vjs-default-skin"
            preload="auto" loop autoplay
-          poster="http://vonax.org/imd/video/videobg.jpg"
+          
           data-setup='{"example_option":true}'>
          <source src="video/testvideo.mp4" type='video/mp4' />
          <source src="imd/video/testvideo.ogv" type='video/ogg' />
@@ -328,13 +328,13 @@
 
       </div>
 
-    <footer id="footer">
+   <footer id="footer">
       
          <div class="row">
                <div class="large-4 medium-4 ftcolumn columns">
                    <h5>Passt der Studiengang zu mir?</h5>
                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam </p>
-                   <a href="#" class="button">Studienberater starten</a>
+                   <a href="#" class="button" data-reveal-id="nopagehere">Studienberater starten</a>
                  </div>
                <div class="large-4 medium-4 ftcolumn columns">
                    <h5>Studienberatung</h5>
@@ -348,7 +348,7 @@
                            <li class="hide"><span class="zip">64807</span>, <span class="state">Dieburg</span></li>
                            <li class="state hide">Hessen</li>
                          </ul>
-                         <a href="#" class="button">Kontakt</a>
+                         <a href="#" class="button" data-reveal-id="nopagehere">Kontakt</a>
                        </div>
                        <div class="large-6 medium-6 columns">
                          <ul class="vcard">
@@ -356,7 +356,7 @@
                            <li class="txtsmall">Studentischer Berater</li>
                            <li>@imd</li>
                          </ul>
-                         <a href="#" class="button">Kontakt</a>
+                         <a href="#" class="button" data-reveal-id="nopagehere">Kontakt</a>
                        </div>
                      </div>
                  </div>
@@ -369,25 +369,27 @@
                  </div>
     </footer> 
 
-      <div class="newsletter">
+     <div class="newsletter">
         <div class="row">
         <form>
-          <div class="small-8 columns">
+          <div class="medium-8 columns">
              <input type="text" id="right-label" placeholder="Ihre E-Mail Adresse">
           </div>
-          <div class="small-4 columns">
-             <a href="#" class="button whitebtn">Zum Bewerbungsreminder anmelden</a>
+          <div class="medium-4 columns">
+             <a href="#" class="button whitebtn" data-reveal-id="nopagehere">Zum Bewerbungsreminder anmelden</a>
           </div>
       </form>
       </div>
       </div>
+
+
     
     </div>
 
     </div>
     <!-- end content -->
 
- </div>
+  </div>
 
  <div id="mcfooter">
 
@@ -401,7 +403,7 @@
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="hide-for-small-only row">
           <hr/>
            <div class="large-3 columns">
             <h6>Interactive Media Design</h6>
@@ -411,34 +413,44 @@
           <div class="large-3 columns">
             <h6>Animation and Game</h6>
             <p>Animation and Game bereitet in einem siebensemestrigen interdisziplinären Studium mit moderner Ausstattung und Dozenten mit fundiertem Praxishintergrund auf Berufe in der internationalen Medienindustrie vor.</p>
-            <a href="#" class="button">Zum Studiengang</a>
+            <a href="http://ag.mediencampus.h-da.de/" class="button">Zum Studiengang</a>
           </div>
           <div class="large-3 columns">
             <h6>Video Motion Pictures</h6>
             <p>Video Motion Pictures bietet eine attraktive und zukunftsweisende Ausbildung in dem dynamischen Umfeld der Medien und bereitet auf ein Berufsleben in der Medienbranche Film und Fernsehen vor.</p>
-            <a href="#" class="button">Zum Studiengang</a>
+            <a href="http://mp.fbmd.h-da.de/" class="button">Zum Studiengang</a>
           </div>
           <div class="large-3 columns">
             <h6>Sound and Music Production</h6>
             <p>Sound and Music Production verbindet praxisorientiertes Arbeiten an Projekten aus Sound-Design und Musikproduktion mit einer fundierten theoretischen Ausbildung in einem sieben- semestrigen Bachelorstudiengang.</p>
-            <a href="#" class="button">Zum Studiengang</a>
+            <a href="http://smp.fbmd.h-da.de/" class="button">Zum Studiengang</a>
           </div>
         </div>
         <div class="row">
         <hr>
                  <div class="large-8 small-8 columns copyright">
-                   <p class="txtsmall">© 2014 h_da - Ein <a href="#">IMD-Projekt</a></p>
+                   <p class="txtsmall">© 2014 h_da - Ein <a href="#" http://smp.fbmd.h-da.de/>IMD-Projekt</a></p>
                  </div>
                  <div class="large-4 small-4 columns txtright copyright">
-                   <p class="txtsmall"><a href="#">Impressum</a></p>
+                   <p class="txtsmall"><a href="http://mediencampus.h-da.de/impressum/">Impressum</a></p>
                  </div>
                </div>
         </div>
 
       </div>
 
-
     </div>
+
+    <!-- Start Document experimental messages -->
+
+    <div id="nopagehere" class="reveal-modal small" data-reveal>
+      <h2>Seite in Arbeit</h2>
+      <p class="lead">Diese Seite ist im aktuellen Stand der Entwicklung nicht abgebildet. Für Fragen stehen wir gerne zur Verfügung.</p>
+      <p>Viele Grüße, <br/>Das Studiengangswebsite Projektteam</p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <!-- End Document experimental messages -->
 
     <script src="js/jquery.js"></script>
     <script src="js/jquery_pagefunctions.js"></script>
@@ -446,7 +458,6 @@
     <script>
       $(document).foundation();
     </script>
-
     
 
   </body>

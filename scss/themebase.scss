@@ -20,7 +20,7 @@ Page setup
 
 @font-face {
   font-family: 'hda_regular';
-  src: local('HDA DIN Office Regular'),url(../fonts/HDADINOff.ttf) format('truetype');
+  src: url(../fonts/DINWeb-Light.woff) format('woff');
   font-style: normal;
   font-weight: 300;
 }
@@ -28,13 +28,13 @@ Page setup
   font-family: 'hda_medium';
   font-style: normal;
   font-weight: normal;
-  src: local('HDA DIN Office Medium'), url(../fonts/HDADINOffMed.ttf) format('truetype');
+  src: url(../fonts/DINWeb-Medium.woff) format('woff');
 }
 @font-face {
   font-family: 'hda_bold';
   font-style: bold;
   font-weight: bold;
-  src: local('HDA DIN Office Bold'), url(../fonts/HDADINOffBld.ttf) format('truetype');
+  src: url(../fonts/DINWeb-Bold.woff) format('woff');
 } 
 
 
