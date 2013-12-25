@@ -53,6 +53,7 @@ $(document).ready(function() {
 	});
 
 	// Stage Nav subnave 100% desktop version
+
 	function stagenavsub(){
 	    var width = $(window).width();
 
@@ -104,7 +105,21 @@ $(document).ready(function() {
 	$(window).resize(mcfooterheight);
 	
 
+	// Orbit Multitext
+	
+	$("#slider1").on("after-slide-change.fndtn.orbit", function(event, orbit) {
+
+  		var slideDescriptions = $('.slide-descriptions .slide-description');
+
+  		slideDescriptions.removeClass('active');
+  		slideDescriptions.eq(orbit.slide_number).addClass('active');
+
+  		console.info("after slide change");
+  		console.info("slide " + orbit.slide_number + " of " + orbit.total_slides);
+	});
+
 	// Mobile Nav Klick Background in Stage
+
 	$(".menu-icon a").click(function() {
 		var scroll = $(document).scrollTop();
 		if(scroll <=500){ 

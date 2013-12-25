@@ -381,6 +381,12 @@ header#pagenav a {
   top:-80px;
   z-index:999;
 }
+.slide-description {
+  display: none;
+}
+.slide-description.active {
+  display: block;
+}
 
 /* -Shortinfo Table */
 
