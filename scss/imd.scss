@@ -9,7 +9,7 @@ Author: Alexander Vonnemann
    Include Sass Config
 ************************ */
 
-@import "themeconfig";
+@import "theme_config";
 @import "settings";
 @import "normalize";
 @import "foundation";
@@ -18,11 +18,15 @@ Author: Alexander Vonnemann
    Include Main Style
 ************************ */
 
-@import "themebase";
+/* Mobile First */
+
+@import "theme_base";
 
 /* *********************
    Include Breakpoint Styles
 ************************ */
 
-@import "small";
+/* Medium Up Breakpoint */
+
+@import "theme_mediumup";
 

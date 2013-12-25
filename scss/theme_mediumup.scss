@@ -1,10 +1,10 @@
 /* 
 
-Function: IMD Main style sheet
+Function: Website style sheet update for medium screens
 Version: 0.1
-Device: Small Screens
+Device: Medium Up Screens
 Author: Alexander Vonnemann
-Last changes: 2013/23/12
+Last changes: 2013/25/12
 
 */
 
@@ -28,34 +28,45 @@ Page setup
 *****************
 */
 
-@media only screen and (max-width: 767px) {
 
-  /* Header */
 
-  .teaser h1, #content .teaser h1, #content #bigtitle .teaser h1 {
-      font-size:3.1rem; 
-      padding-top:50px;
-  }
-  .teaser p, #content .teaser p, #content #bigtitle .teaser p {
-    font-size:1.2rem;
-  }
-  #content #bigtitle .teaser h1 {
-    color:#464952;
-  }
-  #content #bigtitle .teaser p {
-    color:#727679;
-  }
+@media #{$medium-up} {
 
-  /* Content */
+
+/* Header */
+
+.teaser h1, #content .teaser h1 {
+    font-size:6.1rem; /* 48 / 14 */
+    padding-top:80px;
+}
+
+/* Content */
+
+#page {
+  padding-top:500px;
+}
+#header, #header #stagebg {
+    height:500px;
+}
+#page.has-stage {
+  padding-top:750px;
+}
+#header.has-stage, #header.has-stage #stagebg {
+      height: 750px;
+}
+
+
+  /* Content 
 
   #page {
+    position:relative;
     padding-top:300px;
   }
   #page.has-stage {
     padding-top:300px;
   }
   #header, #header #stagebg {
-    height:300px;
+    height:500px;
   }
   #header.has-stage, #header.has-stage #stagebg {
       height: 540px;
@@ -67,7 +78,7 @@ Page setup
     font-size:0.9rem;
   }
   #content .maintext p {
-    font-size:1.2rem;/* 18 / 14 */;
+    font-size:1.2rem;;
     -moz-column-count:1; 
     -webkit-column-count:1; 
     column-count:1;
@@ -81,5 +92,7 @@ Page setup
   #project #imageteaser {
     position:inherit;
   }
+
+ */
 
 }

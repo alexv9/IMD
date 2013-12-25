@@ -1,3 +1,14 @@
+/* 
+
+Function: Website general style sheet
+Version: 0.1
+Device: Small Up Screens
+Author: Alexander Vonnemann & Marisa Wollner
+Last changes: 2013/25/12
+
+*/
+
+
 /* *********************
    Table of contents
 ************************
@@ -106,10 +117,10 @@ a.close {
 }
 #page {
   position:relative;
-  padding-top:500px;
+  padding-top:300px;
 }
 #page.has-stage {
-  padding-top:750px;
+  padding-top:540px;
 }
 @media only screen and (min-width: 40em) {
   .show-for-medium-up.title {
@@ -193,7 +204,7 @@ a.close {
   max-width:inherit;
 }
 #header.has-stage, #header.has-stage #stagebg {
-    height: 750px;
+    height: 540px;
 }
 #stagebg .wrapper {
   background:$header-background;

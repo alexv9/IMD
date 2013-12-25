@@ -5706,6 +5706,16 @@ th.hide-for-touch {
 /* *********************
    Include Main Style
 ************************ */
+/* Mobile First */
+/* 
+
+Function: Website general style sheet
+Version: 0.1
+Device: Small Up Screens
+Author: Alexander Vonnemann & Marisa Wollner
+Last changes: 2013/25/12
+
+*/
 /* *********************
    Table of contents
 ************************
@@ -5811,10 +5821,10 @@ a.close {
 
 #page {
   position: relative;
-  padding-top: 500px; }
+  padding-top: 300px; }
 
 #page.has-stage {
-  padding-top: 750px; }
+  padding-top: 540px; }
 
 @media only screen and (min-width: 40em) {
   .show-for-medium-up.title {
@@ -5895,7 +5905,7 @@ a.close {
   max-width: inherit; }
 
 #header.has-stage, #header.has-stage #stagebg {
-  height: 750px; }
+  height: 540px; }
 
 #stagebg .wrapper {
   background: #c52a2a;
@@ -6216,13 +6226,14 @@ li.name h1 a {
 /* *********************
    Include Breakpoint Styles
 ************************ */
+/* Medium Up Breakpoint */
 /* 
 
-Function: IMD Main style sheet
+Function: Website style sheet update for medium screens
 Version: 0.1
-Device: Small Screens
+Device: Medium Up Screens
 Author: Alexander Vonnemann
-Last changes: 2013/23/12
+Last changes: 2013/25/12
 
 */
 /* *********************
@@ -6243,50 +6254,61 @@ Last changes: 2013/23/12
 Page setup
 *****************
 */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 40.063em) {
   /* Header */
-  .teaser h1, #content .teaser h1, #content #bigtitle .teaser h1 {
-    font-size: 3.1rem;
-    padding-top: 50px; }
-
-  .teaser p, #content .teaser p, #content #bigtitle .teaser p {
-    font-size: 1.2rem; }
-
-  #content #bigtitle .teaser h1 {
-    color: #464952; }
-
-  #content #bigtitle .teaser p {
-    color: #727679; }
+  .teaser h1, #content .teaser h1 {
+    font-size: 6.1rem;
+    /* 48 / 14 */
+    padding-top: 80px; }
 
   /* Content */
   #page {
-    padding-top: 300px; }
-
-  #page.has-stage {
-    padding-top: 300px; }
+    padding-top: 500px; }
 
   #header, #header #stagebg {
-    height: 300px; }
+    height: 500px; }
+
+  #page.has-stage {
+    padding-top: 750px; }
 
   #header.has-stage, #header.has-stage #stagebg {
-    height: 540px; }
+    height: 750px; }
 
+  /* Content 
+
+  #page {
+    position:relative;
+    padding-top:300px;
+  }
+  #page.has-stage {
+    padding-top:300px;
+  }
+  #header, #header #stagebg {
+    height:500px;
+  }
+  #header.has-stage, #header.has-stage #stagebg {
+      height: 540px;
+  }
   header#pagenav {
-    padding-top: 16px; }
-
+    padding-top:16px;
+  }
   table.shortinfotable tr th, table.shortinfotable tr td {
-    font-size: 0.9rem; }
-
+    font-size:0.9rem;
+  }
   #content .maintext p {
-    font-size: 1.2rem;
-    /* 18 / 14 */
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1; }
+    font-size:1.2rem;;
+    -moz-column-count:1; 
+    -webkit-column-count:1; 
+    column-count:1;
+  }
 
   #content .splitter p .cit, #content .splitter p .splittercit-autor {
-    font-size: 1.4rem;
-    line-height: 2.0rem; }
+    font-size:1.4rem;
+    line-height: 2.0rem;
+  }
 
   #project #imageteaser {
-    position: inherit; } }
+    position:inherit;
+  }
+
+ */ }
