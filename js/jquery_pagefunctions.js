@@ -34,7 +34,7 @@ $(document).ready(function() {
 	
 	$(document).scroll(function() {
 		var scroll = $(document).scrollTop();
-		if ($("#header").hasClass("has-stage")) {
+		if ($("#header").hasClass("has-bigstage")) {
 		if(scroll >=600){	
 			$('#pagenav').addClass('scrollednav');
 			$('#mcfooter').css('z-index', '2');
@@ -81,17 +81,18 @@ $(document).ready(function() {
 
       if(width <= 1333) {
       	myPlayer.width("1333").height("750");
-      	//$( "#page.has-stage" ).css( "padding-top", "636px" );
-      	//$( "#header.has-stage" ).css( "height", "636px" );
+      	//$( "#page.has-bigstage" ).css( "padding-top", "636px" );
+      	//$( "#header.has-bigstage" ).css( "height", "636px" );
       }else {
       	myPlayer.width(width).height(height);
-      	//$( "#page.has-stage" ).css( "padding-top", height );
-      	//$( "#header.has-stage" ).css( "height", height );
+      	//$( "#page.has-bigstage" ).css( "padding-top", height );
+      	//$( "#header.has-bigstage" ).css( "height", height );
     }}
 
     $(document).ready(resizeVideoJS);
     $(window).resize(resizeVideoJS);
 
+    
     // Mediencampus Footer Height Parallax
 
     function mcfooterheight(){

@@ -119,7 +119,7 @@ a.close {
   position:relative;
   padding-top:300px;
 }
-#page.has-stage {
+#page.has-bigstage {
   padding-top:540px;
 }
 @media only screen and (min-width: 40em) {
@@ -172,7 +172,7 @@ a.close {
 #content #bigtitle .teaser h1 {
   color:#ffffff;
 }
-.has-stage .teaser h1 {
+.has-bigstage .teaser h1 {
     font-size:3.1rem; /* 48 / 14 */
     border-bottom: none;
 }
@@ -203,7 +203,7 @@ a.close {
 #stagebg img {
   max-width:inherit;
 }
-#header.has-stage, #header.has-stage #stagebg {
+#header.has-bigstage, #stagebg.has-bigstage {
     height: 540px;
 }
 #stagebg .wrapper {
@@ -538,6 +538,13 @@ li.name h1 a {
 .top-bar-section .dropdown.desktopbar li a:hover {
   color:$primary-color;
 }
+
+/* Video */
+
+.video-js {
+  background:transparent !important;
+}
+
 
 @media screen and (max-width: $topbar-breakpoint){
 
