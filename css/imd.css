@@ -6212,6 +6212,79 @@ li.name h1 a {
 .video-js {
   background: transparent !important; }
 
+/*Popup for Article, Project */
+#popup, #overlay {
+  display: none; }
+
+#overlay {
+  max-height: none;
+  position: fixed;
+  z-index: 100;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  background: rgba(190, 195, 199, 0.9); }
+
+#popup {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 100%;
+  width: 100%; }
+
+#popup .wrapper {
+  height: 100%;
+  overflow: scroll;
+  background: #ffffff; }
+
+/* Nav */
+#popup #popupnav {
+  position: fixed;
+  width: 100%;
+  z-index: 999999; }
+
+#popup .close {
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+#popupnav .wrapper {
+  padding: 30px 0;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.1); }
+
+#popup #popupnav button, #popup #popupnav .button {
+  margin: 0; }
+
+/* Header */
+#popup header {
+  width: 100%;
+  position: relative; }
+
+#popup .teaser .autor {
+  font-size: 1rem; }
+
+#popup .headertxt {
+  padding-bottom: 60px; }
+
+#popup #imageteaser {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#popup #content #headerimg img {
+  padding-bottom: 0; }
+
+#popup #content #headerimg {
+  margin-bottom: 80px; }
+
+#popup #content {
+  padding-top: 90px; }
+
 @media screen and (max-width: 930px) {
   .top-bar-section li a:not(.button) {
     padding: 12px 12px !important; } }
