@@ -2225,7 +2225,7 @@ button, .button {
   font-family: "hda_regular", sans-serif;
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.25rem;
+  margin: 0 0 2.5rem;
   position: relative;
   text-decoration: none;
   text-align: center;
@@ -5847,8 +5847,7 @@ a.close {
   border-bottom: 1px dotted #ffffff; }
 
 .teaser h1, #content .teaser h1 {
-  font-size: 6.1rem;
-  /* 48 / 14 */
+  font-size: 3.1rem;
   padding-top: 80px; }
 
 #header .teaser h1 {
@@ -5873,7 +5872,7 @@ a.close {
   color: #ffffff; }
 
 #header {
-  height: 500px;
+  height: 300px;
   width: 100%;
   position: fixed;
   background: transparent;
@@ -5882,7 +5881,7 @@ a.close {
   z-index: 2; }
 
 #stagebg {
-  height: 500px;
+  height: 300px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -5990,17 +5989,14 @@ header#pagenav a {
   display: table-cell;
   vertical-align: middle;
   font-style: italic;
-  color: #ffffff;
-  font-size: 1.8rem;
-  /* 18 / 14 */ }
+  color: #ffffff; }
 
 #content .splitter p .cit, #content .splitter p .splittercit-autor {
   max-width: 800px;
   display: block;
   text-shadow: 0 0 8px #727679;
-  font-size: 2.1rem;
+  font-size: 1.4rem;
   /* 18 / 14 */
-  line-height: 3.1rem;
   margin: 0 auto; }
 
 #content .splitter p .splittercit-autor {
@@ -6339,6 +6335,13 @@ Page setup
   #header.has-bigstage, #stagebg.has-bigstage {
     height: 750px; }
 
+  #content .splitter p .cit, #content .splitter p .splittercit-autor {
+    font-size: 1.8rem;
+    line-height: 3.1rem; }
+
+  .teaser h1, #content .teaser h1 {
+    font-size: 6.1rem; }
+
   /* Content 
 
   #page {
@@ -6367,10 +6370,6 @@ Page setup
     column-count:1;
   }
 
-  #content .splitter p .cit, #content .splitter p .splittercit-autor {
-    font-size:1.4rem;
-    line-height: 2.0rem;
-  }
 
   #project #imageteaser {
     position:inherit;
