@@ -96,8 +96,8 @@
         <div class="large-6 columns">
           <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
           <h3>MediaMonday: Dr. Ulrich Schäfer vom DFKI</h3>
-          <h5>/ Wissenswertes über IMD</h5>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos <a href="#">et accusam et</a> justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+          <a href="events.html#anker" class="filter" data-filter="wissenswertes">Wissenswertes</a>
           <hr />
           <h5>Montag, 13.01.2014, 17:45 Uhr.</h5>
           <p>Raum 17/05, Campuskino, Mediencampus Dieburg, Max-Planckstrasse 2, 64293 Dieburg </p>
@@ -106,8 +106,8 @@
         <div class="large-6 columns">
           <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
           <h3>5.Semesterpräsentationen</h3>
-          <h5>/ Live-Einblicke</h5>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos <a href="#">et accusam et</a> justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+          <a href="events.html#anker" class="filter" data-filter="live">Live-Einblicke</a>
           <hr />
           <h5>Montag, 13.01.2014, 17:45 Uhr.</h5>
           <p>Raum 17/05, Campuskino, Mediencampus Dieburg, Max-Planckstrasse 2, 64293 Dieburg </p>
@@ -122,7 +122,7 @@
 
       </div>
 
-      <div class="row section-teaser">
+      <div id="anker" class="row section-teaser">
         <h2>Eventkalender</h2>
         <p>Kommende Events im Bereich Interactive Media Design die dich interessieren könnten</p>
       </div>
@@ -133,59 +133,72 @@
         <div class="large-12 columns">
           <hr />
           <dl class="sub-nav">
-            <dt>Filter</dt>
-            <dd class="active"><a href="#">Alle</a></dd>
-            <dd><a href="#">Live-Einblicke</a></dd>
-            <dd><a href="#">Infoveranstaltungen</a></dd>
-            <dd><a href="#">Wissenswertes über IMD</a></dd>
+            <dd class="filter active" data-filter="live info wissenswertes"><a>&#10003; &nbsp;Alle</a></dd>
+            <dd class="filter" data-filter="live"><a>Live-Einblicke</a></dd>
+            <dd class="filter" data-filter="info"><a>Infoveranstaltungen</a></dd>
+            <dd class="filter" data-filter="wissenswertes"><a>Wissenswertes über IMD</a></dd>
           </dl>
         </div>
       </div>
 
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <img src="img/studium/studienverlauf.jpg" alt="img">
-          <h3>Studienverlauf</h3>
+
+      <div id="Grid" class="row">
+        <div class="large-4 medium-4 columns mix info">
+          <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
+          <h3>Bewerbungstag</h3>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
           </p>
-          <a href="studienverlauf.html" class="button" data-reveal-id="nopagehere">Studienverlauf kennenlernen</a>
+          <a class="filter" data-filter="info">Infoveranstaltung</a>
+          <hr />
+          <h5>Montag, 13.01.2014, 17:45 Uhr</h5>
+          <p>Raum 17/05, Campuskino. </p>
+          <a href="studienverlauf.html" class="button" data-reveal-id="nopagehere">Infos zum Event</a>
         </div>
-        <div class="large-4 medium-4 columns">
-          <img src="img/studium/projekte.jpg" alt="img">
-          <h3>Projekte</h3>
+        <div class="large-4 medium-4 columns mix wissenswertes">
+          <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
+          <h3>MediaMonday</h3>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
-          <a href="projekte.html" class="button" data-reveal-id="nopagehere">Projekte ansehen</a>
+          <a class="filter" data-filter="wissenswertes">Wissenswertes</a>
+          <hr />
+          <h5>Montag, 13.01.2014, 17:45 Uhr</h5>
+          <p>Raum 17/05, Campuskino. </p>
+          <a href="studienverlauf.html" class="button" data-reveal-id="nopagehere">Infos zum Event</a>
         </div> 
-        <div class="large-4 medium-4 columns">
-          <img data-interchange="[img/studium/interactive-tn_kurse.jpg, (default)], [img/studium/interactive-tn_kurse.jpg, (large)], [img/studium/interactive-tn_kurse_small.jpg, (small)]" src="interactive-tn_kurse_small.jpg" alt="img">
-          <h3>Kurse</h3>
+        <div class="large-4 medium-4 columns mix live">
+          <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
+          <h3>5.Semesterpräsentation </h3>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
-          <a href="kurse.html" class="button" data-reveal-id="nopagehere">Kurse durchstöbern</a>
+          <a class="filter" data-filter="live">Live-Einblicke</a>
+          <hr />
+          <h5>Montag, 13.01.2014, 17:45 Uhr</h5>
+          <p>Raum 17/05, Campuskino. </p>
+          <a href="studienverlauf.html" class="button" data-reveal-id="nopagehere">Infos zum Event</a>
         </div> 
+        <div class="large-4 medium-4 columns mix info">
+          <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
+          <h3>hobit Messe</h3>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
+          </p>
+          <a href="dozenten.html" class="button" data-reveal-id="nopagehere">Dozenten kennenlernen</a>
+        </div>
+        <div class="large-4 medium-4 columns mix info">
+          <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
+          <h3>Schnuppertag</h3>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
+          </p>
+          <a href="dozenten.html" class="button" data-reveal-id="nopagehere">Dozenten kennenlernen</a>
+        </div>
+        <div class="large-4 medium-4 columns mix wissenswertes left">
+          <img data-interchange="" src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
+          <h3>Ausstattung</h3>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
+          <a href="ausstattung.html" class="button" data-reveal-id="nopagehere">Ausstattung betrachten</a>
+        </div>
       </div>
 
 
       <div class="row">
-        <div class="large-4 medium-4 columns">
-          <img src="img/studium/dozenten.jpg" alt="img">
-          <h3>Dozenten</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
-          </p>
-          <a href="dozenten.html" class="button" data-reveal-id="nopagehere">Dozenten kennenlernen</a>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <img src="img/studium/dozenten.jpg" alt="img">
-          <h3>Dozenten</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
-          </p>
-          <a href="dozenten.html" class="button" data-reveal-id="nopagehere">Dozenten kennenlernen</a>
-        </div>
-        <div class="large-4 medium-4 columns left">
-          <img data-interchange="" src="img/studium/ausstattung.jpg" alt="img">
-          <h3>Ausstattung</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
-          <a href="ausstattung.html" class="button" data-reveal-id="nopagehere">Ausstattung betrachten</a>
-        </div> 
+         
       </div>
 
      
@@ -319,12 +332,16 @@
     <!-- End Document experimental messages -->
 
     <script src="js/jquery.js"></script>
+    <script src="js/mixitup/jquery.mixitup.min.js"></script>
     <script src="js/jquery_pagefunctions.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.interchange.js"></script>
     <script src="js/foundation/foundation.tooltip.js"></script>
     <script>
       $(document).foundation();
+      $(function(){ 
+        $('#Grid').mixitup();
+      });
     </script>
     
 

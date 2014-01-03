@@ -23,6 +23,8 @@ Last changes: 2013/25/12
 
 */
 
+
+
 /*
 *****************
 Page setup
@@ -354,13 +356,35 @@ header#pagenav a {
 
 /* -Sub Navigation */
 
-.sub-nav dt {
-  // text-transform: none;
-  margin-right: 1rem;
+.sub-nav {
+  text-align: center;
 }
 
 .sub-nav dd {
-  margin-left: 3rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.sub-nav dd.filter a,
+a.filter {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 2px solid $secondary-color;
+  padding: 0.35rem 1rem;
+  font-color: white;
+  background-color: $secondary-color;
+}
+
+.sub-nav dd.active a {
+  border: 2px solid $primary-color !important;
+  background-color: $primary-color;
+} 
+
+/* -Mixitup */
+
+#Grid .mix{
+    opacity: 0;
+    display: none;
 }
 
 

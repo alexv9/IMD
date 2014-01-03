@@ -6031,11 +6031,30 @@ header#pagenav a {
   font-family: 'hda_bold', sans-serif; }
 
 /* -Sub Navigation */
-.sub-nav dt {
-  margin-right: 1rem; }
+.sub-nav {
+  text-align: center; }
 
 .sub-nav dd {
-  margin-left: 3rem; }
+  margin-right: 1rem;
+  display: inline-block; }
+
+.sub-nav dd.filter a,
+a.filter {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 2px solid #e7e7e7;
+  padding: 0.35rem 1rem;
+  font-color: white;
+  background-color: #e7e7e7; }
+
+.sub-nav dd.active a {
+  border: 2px solid #5f9bcd !important;
+  background-color: #5f9bcd; }
+
+/* -Mixitup */
+#Grid .mix {
+  opacity: 0;
+  display: none; }
 
 /* -Tabs */
 .tabs {
