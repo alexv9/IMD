@@ -4347,8 +4347,8 @@ a.th {
 .has-tip {
   border-bottom: dotted 1px #cccccc;
   cursor: help;
-  font-weight: bold;
-  color: #333333; }
+  font-weight: normal;
+  color: #c52a2a; }
   .has-tip:hover, .has-tip:focus {
     border-bottom: dotted 1px #711818;
     color: #c52a2a; }
