@@ -89,7 +89,7 @@ button.whitebtn, .button.whitebtn {
 }
 button.whitebtn:hover, .button.whitebtn:hover {
   background:#ffffff;
-  color:#cd0627;
+  color:$primary-color;
 }
 button.whitebtn.cta, .button.whitebtn.cta {
   font-family:'hda_bold', sans-serif;
@@ -368,13 +368,13 @@ header#pagenav a {
 }
 .tabs dd > a:hover {
   background:transparent;
-  color:#cd0627;
-  border-bottom:1px solid #cd0627;
+  color:$primary-color;
+  border-bottom:1px solid $primary-color;
 }
 .tabs dd.active a {
   font-weight:bold;
-  color:#cd0627;
-  border-bottom:1px solid #cd0627;
+  color:$primary-color;
+  border-bottom:1px solid $primary-color;
 }
 .tabs-content > .content {
   padding-top:60px;
@@ -512,12 +512,19 @@ li.name h1 a img {
 li.name h1 a {
   font-size:20px
 }
+li.name h1 a span {
+  margin-left:8px;
+}
 .top-bar-section .dropdown.desktopbar {
   background:#ffffff !important;
   left:0;
   width:100%;
   border-bottom:1px solid #dadfe3;
 }
+.top-bar-section ul {
+  padding-top:3px;
+}
+
 .top-bar-section .has-dropdown.desktopbar, .top-bar.desktopbar, .top-bar-section.desktopbar {
   position:static;
 }
