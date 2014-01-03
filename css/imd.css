@@ -4031,7 +4031,7 @@ ul.pagination {
     margin-bottom: 0.625rem;
     font-family: "hda_regular", sans-serif;
     font-weight: normal;
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     color: #999999; }
     .sub-nav dt a,
     .sub-nav dd a,
@@ -6030,6 +6030,13 @@ header#pagenav a {
   margin-top: 8px;
   font-family: 'hda_bold', sans-serif; }
 
+/* -Sub Navigation */
+.sub-nav dt {
+  margin-right: 1rem; }
+
+.sub-nav dd {
+  margin-left: 3rem; }
+
 /* -Tabs */
 .tabs {
   text-align: center;
@@ -6131,16 +6138,6 @@ table.shortinfotable tr th, table.shortinfotable tr td {
 #footer .sociallink.vimeo {
   background: url(../img/icon_vimeo.png) no-repeat left center;
   background-size: 22px; }
-
-/* -Filter */
-.sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
-  background: #ffffff;
-  border: 1px solid #dadfe3;
-  color: #464952;
-  border-radius: 0; }
-
-#filter {
-  padding-top: 40px; }
 
 /* MC Footer */
 #mcfooter {
