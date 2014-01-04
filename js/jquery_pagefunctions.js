@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 	// Pupup for Projects & Articles
 
-		$(document).ready(function () {
+	
     var offsetY = window.pageYOffset,
         $body = $('body'),
         $win = $(window),
@@ -27,20 +27,20 @@ $(document).ready(function() {
         if (e.keyCode === 27){ $close.trigger('click'); }
     });
     $open.click(function () {
-        offsetY = window.pageYOffset;
-        // Block scrolling
-        $body.css({
-            'position': 'fixed',
-            'top': -offsetY + 'px'
-        });
-        // Show overlay
-        $overlay.fadeIn('fast');
-        $popup.fadeIn('fast');
-        $popup.addClass('animated fadeInDown');
-        setTimeout(function(){
-            $popup.removeClass('animated fadeInDown');
-		}, 1000);
-
+	        offsetY = window.pageYOffset;
+	        // Block scrolling
+	        $body.css({
+	            'position': 'fixed',
+	            'top': -offsetY + 'px'
+	        });
+	        // Show overlay
+	        $overlay.fadeIn('fast');
+	        $popup.fadeIn('fast');
+	        $('.popupcontent').load('projekte/exunlimited.html');
+	        $popup.addClass('animated fadeInDown');
+	        setTimeout(function(){
+	            $popup.removeClass('animated fadeInDown');
+			}, 1000);
     });
 
     $close.click(function () {
@@ -58,7 +58,6 @@ $(document).ready(function() {
             $popup.removeClass('animated fadeOutDownBig');
 		}, 1000);
     });
-});
 
 
 
