@@ -27,6 +27,8 @@ $(document).ready(function() {
         if (e.keyCode === 27){ $close.trigger('click'); }
     });
     $open.click(function () {
+    		event.preventDefault();
+    		link = $(this).attr("href");
 	        offsetY = window.pageYOffset;
 	        // Block scrolling
 	        $body.css({
@@ -36,7 +38,7 @@ $(document).ready(function() {
 	        // Show overlay
 	        $overlay.fadeIn('fast');
 	        $popup.fadeIn('fast');
-	        $('.popupcontent').load('projekte/exunlimited.html');
+	        $('.popupcontent').load(link);
 	        $popup.addClass('animated fadeInDown');
 	        setTimeout(function(){
 	            $popup.removeClass('animated fadeInDown');
