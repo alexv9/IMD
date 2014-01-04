@@ -356,29 +356,47 @@ header#pagenav a {
 
 /* -Sub Navigation */
 
-.sub-nav {
+dl.sub-nav {
+  display: table;
+  width: 100%;
   text-align: center;
 }
 
-.sub-nav dd {
+dl.sub-nav dd {
   margin-right: 1rem;
   display: inline-block;
-}
-
-.sub-nav dd.filter a,
-a.filter {
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  border: 2px solid $secondary-color;
-  padding: 0.35rem 1rem;
-  font-color: white;
-  background-color: $secondary-color;
+  text-align: center;
+  float:none;
+  width:100%;
 }
 
 .sub-nav dd.active a {
   border: 2px solid $primary-color !important;
   background-color: $primary-color;
+  padding: 0.35rem 1rem;
 } 
+
+/* -Tags */
+
+a.tag {
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
+  -webkit-border-radius: $global-radius;
+  border-radius:$global-radius;
+  border: 2px solid $secondary-color;
+  padding: 0.35rem 1rem;
+  color: $body-font-color;
+  background-color: $secondary-color;
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
+.tag:hover {
+  border: 2px solid $primary-color !important;
+  color: #ffffff !important;
+  background-color: $primary-color;
+}
 
 /* -Mixitup */
 

@@ -6031,24 +6031,40 @@ header#pagenav a {
   font-family: 'hda_bold', sans-serif; }
 
 /* -Sub Navigation */
-.sub-nav {
+dl.sub-nav {
+  display: table;
+  width: 100%;
   text-align: center; }
 
-.sub-nav dd {
+dl.sub-nav dd {
   margin-right: 1rem;
-  display: inline-block; }
+  display: inline-block;
+  text-align: center;
+  float: none;
+  width: 100%; }
 
-.sub-nav dd.filter a,
-a.filter {
+.sub-nav dd.active a {
+  border: 2px solid #c52a2a !important;
+  background-color: #c52a2a;
+  padding: 0.35rem 1rem; }
+
+/* -Tags */
+a.tag {
+  -webkit-transition: background-color 300ms ease-out;
+  -moz-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: 2px solid #e7e7e7;
   padding: 0.35rem 1rem;
-  font-color: white;
-  background-color: #e7e7e7; }
+  color: #727679;
+  background-color: #e7e7e7;
+  margin-bottom: 3rem;
+  display: inline-block; }
 
-.sub-nav dd.active a {
+.tag:hover {
   border: 2px solid #c52a2a !important;
+  color: #ffffff !important;
   background-color: #c52a2a; }
 
 /* -Mixitup */
@@ -6363,6 +6379,10 @@ Page setup
 
   .teaser h1, #content .teaser h1 {
     font-size: 6.1rem; }
+
+  /* -Sub-Nav*/
+  dl.sub-nav dd {
+    width: auto; }
 
   /* Content 
 
