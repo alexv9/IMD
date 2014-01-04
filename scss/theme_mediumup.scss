@@ -35,6 +35,15 @@ Page setup
 
 /* Header */
 
+li.name h1 a {
+  font-size:20px
+}
+li.name h1 a span {
+  margin-left:8px;
+}
+#header, #stagebg {
+  height:500px;
+}
 .teaser h1, #content .teaser h1 {
     font-size:6.1rem; /* 48 / 14 */
     padding-top:80px;
@@ -42,15 +51,7 @@ Page setup
 
 /* Content */
 
-#page {
-  padding-top:500px;
-}
-#header, #header #stagebg {
-    height:500px;
-}
-#page.has-bigstage {
-  padding-top:750px;
-}
+
 #header.has-bigstage, #stagebg.has-bigstage {
       height: 750px;
 }
@@ -61,6 +62,9 @@ Page setup
 .teaser h1, #content .teaser h1 {
   font-size:6.1rem;
 }
+
+
+
 
   /* Content 
 

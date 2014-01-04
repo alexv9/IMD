@@ -5807,13 +5807,6 @@ a.close {
 .hide {
   display: none !important; }
 
-#page {
-  position: relative;
-  padding-top: 300px; }
-
-#page.has-bigstage {
-  padding-top: 540px; }
-
 @media only screen and (min-width: 40em) {
   .show-for-medium-up.title {
     display: inline !important; } }
@@ -5874,19 +5867,18 @@ a.close {
 #header {
   height: 300px;
   width: 100%;
-  position: fixed;
   background: transparent;
   overflow: hidden;
-  top: 0;
   z-index: 2; }
 
 #stagebg {
   height: 300px;
-  position: fixed;
   top: 0;
+  position: absolute;
+  overflow: hidden;
   width: 100%;
-  background: #76aad4;
-  z-index: 1; }
+  z-index: -1;
+  background: #76aad4; }
 
 #stagebg img {
   max-width: inherit; }
@@ -5900,9 +5892,9 @@ a.close {
 
 #content {
   position: relative;
-  z-index: 3;
   background: #ffffff;
-  border-bottom: 2px solid #1d1d1e; }
+  border-bottom: 2px solid #1d1d1e;
+  box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.4); }
 
 .cntwrapper {
   background: #ffffff; }
@@ -6161,10 +6153,7 @@ table.shortinfotable tr th, table.shortinfotable tr td {
 /* MC Footer */
 #mcfooter {
   width: 100%;
-  position: fixed;
-  z-index: 0;
-  bottom: 0;
-  background: #2f3031;
+  background: #1f1f20;
   padding: 60px 0 20px 0; }
 
 #mcfooter hr {
@@ -6193,11 +6182,8 @@ table.shortinfotable tr th, table.shortinfotable tr td {
 li.name h1 a img {
   padding-bottom: 5px; }
 
-li.name h1 a {
-  font-size: 20px; }
-
 li.name h1 a span {
-  margin-left: 8px; }
+  margin-left: 0px; }
 
 .top-bar-section .dropdown.desktopbar {
   background: #ffffff !important;
@@ -6339,21 +6325,21 @@ Page setup
 */
 @media only screen and (min-width: 40.063em) {
   /* Header */
+  li.name h1 a {
+    font-size: 20px; }
+
+  li.name h1 a span {
+    margin-left: 8px; }
+
+  #header, #stagebg {
+    height: 500px; }
+
   .teaser h1, #content .teaser h1 {
     font-size: 6.1rem;
     /* 48 / 14 */
     padding-top: 80px; }
 
   /* Content */
-  #page {
-    padding-top: 500px; }
-
-  #header, #header #stagebg {
-    height: 500px; }
-
-  #page.has-bigstage {
-    padding-top: 750px; }
-
   #header.has-bigstage, #stagebg.has-bigstage {
     height: 750px; }
 
@@ -6398,3 +6384,53 @@ Page setup
   }
 
  */ }
+/* Large Up Breakpoint */
+/* 
+
+Function: Website style sheet update for large screens
+Version: 0.1
+Device: Medium Up Screens
+Author: Alexander Vonnemann
+Last changes: 2014/01/04
+
+*/
+/* *********************
+   Table of contents
+************************
+
+-> Page setup
+-> Header
+-> Content
+-> Slide, Maps & Songs
+-> Contact information
+-> Footer
+-> 2x Screen Images
+
+*/
+@media only screen and (min-width: 64.063em) {
+  /* Header */
+  #header, #stagebg {
+    position: fixed; }
+
+  #header {
+    top: 0; }
+
+  #stagebg {
+    z-index: 1; }
+
+  /* Content */
+  #content {
+    z-index: 3; }
+
+  #page {
+    padding-top: 500px;
+    position: relative; }
+
+  #page.has-bigstage {
+    padding-top: 750px; }
+
+  /* Footer */
+  #mcfooter {
+    position: fixed;
+    bottom: 0;
+    z-index: 0; } }

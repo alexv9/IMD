@@ -146,13 +146,20 @@ $(document).ready(function() {
 
 	// Mediencampus Footer Height Parallax
 
+
     function mcfooterheight(){
+
+	var width = $(window).width();
+	if(width>=767) {
 		var mcfooterHeight = $("#mcfooter").css('height');
 		$( "#page" ).css( "padding-bottom", mcfooterHeight );
-    }
+    }else {
+        $( "#page" ).css( "padding-bottom", "0" );
+    }}
 
 	$(window).bind('load', mcfooterheight);
 	$(window).resize(mcfooterheight);
+	
 
 	
 	// Orbit Multitext

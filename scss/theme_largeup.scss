@@ -1,0 +1,59 @@
+/* 
+
+Function: Website style sheet update for large screens
+Version: 0.1
+Device: Medium Up Screens
+Author: Alexander Vonnemann
+Last changes: 2014/01/04
+
+*/
+
+/* *********************
+   Table of contents
+************************
+
+-> Page setup
+-> Header
+-> Content
+-> Slide, Maps & Songs
+-> Contact information
+-> Footer
+-> 2x Screen Images
+
+*/
+
+@media #{$large-up} {
+
+/* Header */
+
+#header, #stagebg {
+  position: fixed;
+}
+#header {
+  top:0;
+}
+#stagebg {
+  z-index:1;
+}
+
+/* Content */
+
+#content {
+  z-index:3;
+}
+#page {
+  padding-top:500px;
+  position:relative;
+}
+#page.has-bigstage {
+  padding-top:750px;
+}
+/* Footer */
+
+#mcfooter { 
+  position:fixed;
+  bottom: 0;
+  z-index: 0;
+}
+
+}
