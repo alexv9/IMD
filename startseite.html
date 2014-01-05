@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="css/imd.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
 
-    <script src="js/modernizr.js"></script>
-
+    
   </head>
   <body>
     
@@ -65,14 +64,10 @@
       <div class="row headertxt">
 
         <div class="teaser">
-          <h1>Die Zukunft ist interaktiv</h1>
-          <p>Interactive Media Design verbindet Design, Strategie und Technik in einem praxisorientierten siebensemestrigen Studiengang.</p>
-          <a href="studium.html" id="scrolltocontent" class="button whitebtn cta animated pulse">Jetzt informieren</a>
-          <br/>
-          oder
-          <br/>
-          <br/>
-          <a href="">Zum Bewerbungsreminder anmelden</a>
+         
+          <p>Gestalte die Zukunft</p>
+          <h1>Studiere Interactive Media Design und entwerfe die kommenden <strong class="rotate">Interfaces, Apps, Websites, Games, Installationen</strong></h1>
+          <a href="studium.html" id="scrolltocontent" class="button whitebtn cta animated pulse">Jetzt einschreiben</a>
         </div>
 
       </div>
@@ -431,12 +426,28 @@
 
     <!-- End Document experimental messages -->
 
-    <script src="js/jquery.js"></script>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script src="js/modernizr.js"></script>
     <script src="js/jquery_pagefunctions.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.interchange.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
 
+
+    <link rel="stylesheet" type="text/css" href="plugins/simpletextrotator/simpletextrotator.css" />
+    <script src="plugins/simpletextrotator/jquery.simple-text-rotator.js"></script>
+
+  
+     <script type="text/javascript">
+     $(document).ready(function() {
+      $(".rotate").textrotator({
+        animation: "flipUp",
+        speed: 2000
+      });
+      });
+  </script>
 
     <!-- Video JS -->
     <link href="css/video-js.css" rel="stylesheet">

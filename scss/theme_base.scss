@@ -135,7 +135,7 @@ a.close {
 
 .row.headertxt {
   display:table;
-  max-width:580px;
+  max-width:720px;
   margin:0 auto;
   height:100%;
   padding:0 20px;
@@ -167,13 +167,19 @@ a.close {
 #content #bigtitle .teaser h1 {
   color:#ffffff;
 }
-.has-bigstage .teaser h1 {
-    font-size:3.1rem; /* 48 / 14 */
-    border-bottom: none;
+#header.has-bigstage .teaser h1 {
+    font-size:3.6rem;
+    padding-bottom:40px;
+    padding-top:0;
+    font-family:'hda_regular', sans-serif;
 }
-.teaser p, #content .teaser p {
-  font-size:1.7rem;
-  line-height: 1.6;
+#header.has-bigstage .teaser p {
+  padding-top:80px;
+  font-size:2.6rem;
+  color:rgba(255,255,255,0.8);
+}
+#header.has-bigstage .teaser h1 strong {
+  font-family:'hda_bold', sans-serif;
 }
 #header .teaser p, #bigtitle .teaser p {
   color:#ffffff;
