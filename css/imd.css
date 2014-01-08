@@ -4,6 +4,7 @@
 
 Function: Website Style Root
 Author: Alexander Vonnemann
+Framework: Foundation 5.0.1
 
 */
 /* *********************
@@ -1840,8 +1841,8 @@ select {
     .alert-box .close:hover, .alert-box .close:focus {
       opacity: 0.5; }
   .alert-box.radius {
-    -webkit-border-radius: 6px;
-    border-radius: 6px; }
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
   .alert-box.round {
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
@@ -2180,8 +2181,8 @@ select {
   border-width: 1px;
   background-color: #f4f4f4;
   border-color: #dadada;
-  -webkit-border-radius: 6px;
-  border-radius: 6px; }
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
   .breadcrumbs > * {
     margin: 0;
     float: left;
@@ -2307,8 +2308,8 @@ button, .button {
     text-align: right;
     padding-right: 0.75rem; }
   button.radius, .button.radius {
-    -webkit-border-radius: 6px;
-    border-radius: 6px; }
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
   button.round, .button.round {
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
@@ -2397,19 +2398,19 @@ button, .button {
   .button-group.radius > *:last-child button, .button-group.radius > *:last-child .button {
     border-right: 0; }
   .button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button {
-    -moz-border-radius-bottomleft: 6px;
-    -moz-border-radius-topleft: 6px;
-    -webkit-border-bottom-left-radius: 6px;
-    -webkit-border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px; }
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; }
   .button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button {
-    -moz-border-radius-topright: 6px;
-    -moz-border-radius-bottomright: 6px;
-    -webkit-border-top-right-radius: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px; }
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
   .button-group.round > * > button, .button-group.round > * .button {
     border-right: 1px solid;
     border-color: rgba(255, 255, 255, 0.5); }
@@ -2881,8 +2882,8 @@ select {
   -webkit-border-radius: 0;
   border-radius: 0; }
   select.radius {
-    -webkit-border-radius: 6px;
-    border-radius: 6px; }
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
   select:hover {
     background: #f2f2f2 url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==") no-repeat;
     background-position-x: 97%;
@@ -2935,22 +2936,22 @@ select {
 .prefix.button.radius {
   -webkit-border-radius: 0;
   border-radius: 0;
-  -moz-border-radius-bottomleft: 6px;
-  -moz-border-radius-topleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -webkit-border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px; }
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px; }
 
 .postfix.button.radius {
   -webkit-border-radius: 0;
   border-radius: 0;
-  -moz-border-radius-topright: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px; }
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 .prefix.button.round {
   -webkit-border-radius: 0;
@@ -2981,12 +2982,12 @@ span.prefix, label.prefix {
   span.prefix.radius, label.prefix.radius {
     -webkit-border-radius: 0;
     border-radius: 0;
-    -moz-border-radius-bottomleft: 6px;
-    -moz-border-radius-topleft: 6px;
-    -webkit-border-bottom-left-radius: 6px;
-    -webkit-border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px; }
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; }
 
 span.postfix, label.postfix {
   background: #f2f2f2;
@@ -2996,28 +2997,28 @@ span.postfix, label.postfix {
   span.postfix.radius, label.postfix.radius {
     -webkit-border-radius: 0;
     border-radius: 0;
-    -moz-border-radius-topright: 6px;
-    -moz-border-radius-bottomright: 6px;
-    -webkit-border-top-right-radius: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px; }
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
 
 /* Input groups will automatically style first and last elements of the group */
 .input-group.radius > *:first-child, .input-group.radius > *:first-child * {
-  -moz-border-radius-bottomleft: 6px;
-  -moz-border-radius-topleft: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -webkit-border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px; }
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px; }
 .input-group.radius > *:last-child, .input-group.radius > *:last-child * {
-  -moz-border-radius-topright: 6px;
-  -moz-border-radius-bottomright: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px; }
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
 .input-group.round > *:first-child, .input-group.round > *:first-child * {
   -moz-border-radius-bottomleft: 1000px;
   -moz-border-radius-topleft: 1000px;
@@ -3384,8 +3385,8 @@ kbd {
   font-family: "Consolas", "Menlo", "Courier", monospace;
   font-size: 0.875rem;
   padding: 0.125rem 0.25rem 0;
-  -webkit-border-radius: 6px;
-  border-radius: 6px; }
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
 
 .label {
   font-weight: normal;
@@ -3402,8 +3403,8 @@ kbd {
   background-color: #c52a2a;
   color: white; }
   .label.radius {
-    -webkit-border-radius: 6px;
-    border-radius: 6px; }
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
   .label.round {
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
@@ -3684,8 +3685,8 @@ ul.pagination {
       display: block;
       padding: 0.0625rem 0.625rem 0.0625rem;
       color: #999999;
-      -webkit-border-radius: 6px;
-      border-radius: 6px; }
+      -webkit-border-radius: 3px;
+      border-radius: 3px; }
     ul.pagination li:hover a,
     ul.pagination li a:focus {
       background: #e6e6e6; }
@@ -3752,8 +3753,8 @@ ul.pagination {
     .panel.callout a {
       color: #c52a2a; }
   .panel.radius {
-    -webkit-border-radius: 6px;
-    border-radius: 6px; }
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
 
 /* Pricing Tables */
 .pricing-table {
@@ -3825,11 +3826,11 @@ ul.pagination {
     height: 100%;
     display: block; }
   .progress.radius {
-    -webkit-border-radius: 6px;
-    border-radius: 6px; }
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
     .progress.radius .meter {
-      -webkit-border-radius: 5px;
-      border-radius: 5px; }
+      -webkit-border-radius: 2px;
+      border-radius: 2px; }
   .progress.round {
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
@@ -3998,12 +3999,12 @@ ul.pagination {
   .split.button.secondary span:before {
     border-color: #333333 transparent transparent transparent; }
   .split.button.radius span {
-    -moz-border-radius-topright: 6px;
-    -moz-border-radius-bottomright: 6px;
-    -webkit-border-top-right-radius: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px; }
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
   .split.button.round span {
     -moz-border-radius-topright: 1000px;
     -moz-border-radius-bottomright: 1000px;
@@ -4045,8 +4046,8 @@ ul.pagination {
     .sub-nav dt.active a,
     .sub-nav dd.active a,
     .sub-nav li.active a {
-      -webkit-border-radius: 6px;
-      border-radius: 6px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
       font-weight: normal;
       background: #c52a2a;
       padding: 0.1875rem 1rem;
@@ -4272,19 +4273,19 @@ table {
     .tabs dd.active a {
       background: #fff; }
   .tabs.radius dd:first-child a {
-    -moz-border-radius-bottomleft: 6px;
-    -moz-border-radius-topleft: 6px;
-    -webkit-border-bottom-left-radius: 6px;
-    -webkit-border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px; }
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; }
   .tabs.radius dd:last-child a {
-    -moz-border-radius-topright: 6px;
-    -moz-border-radius-bottomright: 6px;
-    -webkit-border-top-right-radius: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px; }
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
   .tabs.vertical dd {
     position: inherit;
     float: none;
@@ -4336,8 +4337,8 @@ table {
     -webkit-box-shadow: 0 0 6px 1px rgba(197, 42, 42, 0.5);
     box-shadow: 0 0 6px 1px rgba(197, 42, 42, 0.5); }
   .th.radius {
-    -webkit-border-radius: 6px;
-    border-radius: 6px; }
+    -webkit-border-radius: 3px;
+    border-radius: 3px; }
 
 a.th {
   display: inline-block;
@@ -4368,8 +4369,8 @@ a.th {
   width: 100%;
   color: white;
   background: #333333;
-  -webkit-border-radius: 6px;
-  border-radius: 6px; }
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
   .tooltip > .nub {
     display: block;
     left: 5px;
@@ -4792,7 +4793,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #464952;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   line-height: 1.4; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
@@ -5762,7 +5763,7 @@ h2 {
 button, .button {
   border: 2px solid rgba(197, 42, 42, 0.8) !important;
   background: transparent;
-  border-radius: 6px;
+  border-radius: 3px;
   padding: 0.6rem 1.2rem;
   color: #c52a2a; }
 
@@ -5802,7 +5803,7 @@ a.close {
   text-align: right; }
 
 .txtsmall {
-  font-size: 1.0rem; }
+  font-size: 0.9rem; }
 
 .hide {
   display: none !important; }
@@ -5817,6 +5818,12 @@ a.close {
   background: #f3f5f7; }
 
 /* Header */
+.top-bar-section li a:not(.button) {
+  line-height: 98px; }
+
+.top-bar-section ul.dropdown li a:not(.button) {
+  line-height: 20px; }
+
 .row.headertxt {
   display: table;
   max-width: 720px;
@@ -5840,27 +5847,29 @@ a.close {
   border-bottom: 1px dotted #ffffff; }
 
 .teaser h1, #content .teaser h1 {
-  font-size: 3.1rem;
+  font-size: 2.1rem;
   padding-top: 80px; }
 
 #header .teaser h1 {
   color: #ffffff;
   font-weight: bold;
-  text-shadow: 0 0 8px #727679;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   font-family: 'hda_bold', sans-serif; }
 
 #content #bigtitle .teaser h1 {
   color: #ffffff; }
 
 #header.has-bigstage .teaser h1 {
-  font-size: 3.6rem;
-  padding-bottom: 40px;
+  font-size: 1.6rem;
+  padding-bottom: 20px;
   padding-top: 0;
-  font-family: 'hda_regular', sans-serif; }
+  font-family: 'hda_medium', sans-serif;
+  font-weight: 100; }
 
 #header.has-bigstage .teaser p {
+  font-family: 'hda_regular', sans-serif;
   padding-top: 80px;
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.8); }
 
 #header.has-bigstage .teaser h1 strong {
@@ -5899,7 +5908,7 @@ a.close {
   position: relative;
   background: #ffffff;
   border-bottom: 2px solid #1d1d1e;
-  box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0px 36px 36px rgba(0, 0, 0, 0.4); }
 
 .cntwrapper {
   background: #ffffff; }
@@ -6050,8 +6059,8 @@ a.tag {
   -webkit-transition: background-color 300ms ease-out;
   -moz-transition: background-color 300ms ease-out;
   transition: background-color 300ms ease-out;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   border: 2px solid #e7e7e7;
   padding: 0.35rem 1rem;
   color: #727679;
@@ -6121,55 +6130,11 @@ table.shortinfotable tr:nth-of-type(even) {
   background: none; }
 
 table.shortinfotable tr th, table.shortinfotable tr td {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   /* 16 / 14 */
   width: 50%;
   padding-left: 0;
   padding-right: 0; }
-
-/* Footer */
-#footer .row {
-  padding-bottom: 0; }
-
-#footer img {
-  padding: 0 !important; }
-
-#content #footer p {
-  font-size: 1.0rem; }
-
-#content #footer .copyright a {
-  border: 0; }
-
-#footer .ftcolumn {
-  padding-top: 40px;
-  padding-bottom: 20px; }
-
-#footer .columns:last-child {
-  border-right: 0; }
-
-#footer .vcard {
-  border: 0;
-  padding: 0; }
-
-#footer .sociallink {
-  display: block;
-  float: left;
-  height: 36px;
-  width: 36px;
-  text-indent: -99999px;
-  border: 0; }
-
-#footer .sociallink.facebook {
-  background: url(../img/icon_facebook.png) no-repeat left center;
-  background-size: 22px; }
-
-#footer .sociallink.twitter {
-  background: url(../img/icon_twitter.png) no-repeat left center;
-  background-size: 22px; }
-
-#footer .sociallink.vimeo {
-  background: url(../img/icon_vimeo.png) no-repeat left center;
-  background-size: 22px; }
 
 /* MC Footer */
 #mcfooter {
@@ -6195,6 +6160,9 @@ table.shortinfotable tr th, table.shortinfotable tr td {
 #mcfooter a.button {
   border: 2px solid #76797c !important;
   color: #76797c !important; }
+
+#mcfooter .mediencampuslogo {
+  padding-bottom: 20px; }
 
 /*Top Bar*/
 .top-bar-section li a:not(.button) {
@@ -6354,8 +6322,14 @@ Page setup
 
   .teaser h1, #content .teaser h1 {
     font-size: 6.1rem;
-    /* 48 / 14 */
-    padding-top: 80px; }
+    /* 48 / 14 */ }
+
+  #header.has-bigstage .teaser h1 {
+    font-size: 3.6rem;
+    padding-bottom: 40px; }
+
+  #header.has-bigstage .teaser p {
+    font-size: 2.6rem; }
 
   /* Content */
   #header.has-bigstage, #stagebg.has-bigstage {
@@ -6368,6 +6342,13 @@ Page setup
   .teaser h1, #content .teaser h1 {
     font-size: 6.1rem; }
 
+  #content p {
+    padding-right: 20px; }
+
+  table.shortinfotable tr th, table.shortinfotable tr td {
+    font-size: 1.0rem;
+    /* 16 / 14 */ }
+
   /* -Sub-Nav*/
   dl.sub-nav dd {
     width: auto; } }
@@ -6376,7 +6357,7 @@ Page setup
 
 Function: Website style sheet update for large screens
 Version: 0.1
-Device: Medium Up Screens
+Device: Large Up Screens
 Author: Alexander Vonnemann
 Last changes: 2014/01/04
 
@@ -6396,25 +6377,30 @@ Last changes: 2014/01/04
 */
 @media only screen and (min-width: 64.063em) {
   /* Header */
+  /*
   #header, #stagebg {
-    position: fixed; }
-
+    position: fixed;
+  }
   #header {
-    top: 0; }
-
+    top:0;
+  }
+  */
   #stagebg {
     z-index: 1; }
+
+  header {
+    position: relative; }
 
   /* Content */
   #content {
     z-index: 3; }
 
   #page {
-    padding-top: 500px;
+    /*padding-top:500px;*/
     position: relative; }
 
   #page.has-bigstage {
-    padding-top: 750px; }
+    /*padding-top:750px;*/ }
 
   /* Footer */
   #mcfooter {

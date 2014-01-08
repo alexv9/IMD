@@ -46,7 +46,13 @@ li.name h1 a span {
 }
 .teaser h1, #content .teaser h1 {
     font-size:6.1rem; /* 48 / 14 */
-    padding-top:80px;
+}
+#header.has-bigstage .teaser h1 {
+    font-size:3.6rem;
+    padding-bottom:40px;
+}
+#header.has-bigstage .teaser p {
+  font-size:2.6rem;
 }
 
 /* Content */
@@ -61,6 +67,12 @@ li.name h1 a span {
 }
 .teaser h1, #content .teaser h1 {
   font-size:6.1rem;
+}
+#content p {
+  padding-right:20px;
+}
+table.shortinfotable tr th, table.shortinfotable tr td {
+  font-size:1.0rem;/* 16 / 14 */
 }
 
 /* -Sub-Nav*/

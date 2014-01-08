@@ -2,7 +2,7 @@
 
 Function: Website style sheet update for large screens
 Version: 0.1
-Device: Medium Up Screens
+Device: Large Up Screens
 Author: Alexander Vonnemann
 Last changes: 2014/01/04
 
@@ -26,14 +26,19 @@ Last changes: 2014/01/04
 
 /* Header */
 
+/*
 #header, #stagebg {
   position: fixed;
 }
 #header {
   top:0;
 }
+*/
 #stagebg {
   z-index:1;
+}
+header {
+  position:relative;
 }
 
 /* Content */
@@ -42,11 +47,11 @@ Last changes: 2014/01/04
   z-index:3;
 }
 #page {
-  padding-top:500px;
+  /*padding-top:500px;*/
   position:relative;
 }
 #page.has-bigstage {
-  padding-top:750px;
+  /*padding-top:750px;*/
 }
 /* Footer */
 

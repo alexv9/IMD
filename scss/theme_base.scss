@@ -112,7 +112,7 @@ a.close {
   text-align:right;
 }
 .txtsmall {
-  font-size:1.0rem;
+  font-size:0.9rem;
 }
 .hide {
   display:none !important;
@@ -132,7 +132,12 @@ a.close {
 }
 
 /* Header */
-
+.top-bar-section li a:not(.button) {
+  line-height: 98px;
+}
+.top-bar-section ul.dropdown li a:not(.button) {
+  line-height: 20px;
+}
 .row.headertxt {
   display:table;
   max-width:720px;
@@ -155,32 +160,35 @@ a.close {
   border-bottom: 1px dotted #ffffff;
 }
 .teaser h1, #content .teaser h1 {
-    font-size:3.1rem;
+    font-size:2.1rem;
     padding-top:80px;
 }
 #header .teaser h1 {
    color:#ffffff;
    font-weight:bold; 
-   text-shadow: 0 0 8px $body-font-color;
+   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   font-family:'hda_bold', sans-serif;
 }
 #content #bigtitle .teaser h1 {
   color:#ffffff;
 }
 #header.has-bigstage .teaser h1 {
-    font-size:3.6rem;
-    padding-bottom:40px;
+    font-size:1.6rem;
+    padding-bottom:20px;
     padding-top:0;
-    font-family:'hda_regular', sans-serif;
+    font-family:'hda_medium', sans-serif;
+    font-weight:100;
 }
 #header.has-bigstage .teaser p {
+  font-family:'hda_regular', sans-serif;
   padding-top:80px;
-  font-size:2.6rem;
+  font-size:1.6rem;
   color:rgba(255,255,255,0.8);
 }
 #header.has-bigstage .teaser h1 strong {
   font-family:'hda_bold', sans-serif;
 }
+
 #header .teaser p, #bigtitle .teaser p {
   color:#ffffff;
 }
@@ -214,7 +222,7 @@ a.close {
   position:relative;
   background:#ffffff;
   border-bottom:2px solid #1d1d1e;
-  box-shadow:0px 0px 36px rgba(0, 0, 0, 0.4);
+  box-shadow:0px 36px 36px rgba(0, 0, 0, 0.4);
 }
 .cntwrapper {
   background:#ffffff;
@@ -460,58 +468,11 @@ table.shortinfotable tr:nth-of-type(even) {
   background:none;
 }
 table.shortinfotable tr th, table.shortinfotable tr td {
-  font-size:1.1rem;/* 16 / 14 */
+  font-size:0.9rem;/* 16 / 14 */
   width:50%;
   padding-left:0;
   padding-right:0;
 }
-
-/* Footer */
-
-#footer .row {
-  padding-bottom:0;
-}
-#footer img {
-  padding:0 !important;
-}
-#content #footer  p {
-    font-size:1.0rem;
-}
-#content #footer .copyright a {
-  border:0;
-}
-#footer .ftcolumn {
-  padding-top:40px;
-  padding-bottom:20px;
-}
-#footer .columns:last-child {
-  border-right:0;
-}
-#footer .vcard {
-  border:0;
-  padding:0;
-}
-#footer .sociallink {
-  display:block;
-  float:left;
-  height:36px;
-  width:36px;
-  text-indent:-99999px;
-  border:0;
-}
-#footer .sociallink.facebook {
-  background:url(../img/icon_facebook.png) no-repeat left center;
-  background-size:22px;
-}
-#footer .sociallink.twitter {
-  background:url(../img/icon_twitter.png) no-repeat left center;
-  background-size:22px;
-}
-#footer .sociallink.vimeo {
-  background:url(../img/icon_vimeo.png) no-repeat left center;
-  background-size:22px;
-}
-
 
 /* MC Footer */
 
@@ -538,6 +499,9 @@ table.shortinfotable tr th, table.shortinfotable tr td {
 #mcfooter a.button {
 	border:2px solid #76797c !important;
 	color: #76797c !important;
+}
+#mcfooter .mediencampuslogo {
+  padding-bottom:20px;
 }
 
 /*Top Bar*/

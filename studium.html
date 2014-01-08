@@ -234,47 +234,6 @@ Das Studium ist praxisorientiert. In jedem Semester werden in kleinen Teams Proj
 
       </div>
 
-      <footer id="footer">
-      
-         <div class="row">
-               <div class="large-4 medium-4 ftcolumn columns">
-                   <h5>Passt der Studiengang zu mir?</h5>
-                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam </p>
-                   <a href="#" class="button" data-reveal-id="nopagehere">Studienberater starten</a>
-                 </div>
-               <div class="large-4 medium-4 ftcolumn columns">
-                   <h5>Studienberatung</h5>
-                    <div class="row">
-                       <div class="large-6 medium-6 columns">
-                         <ul class="vcard">
-                           <li class="fn">Andrea Krajewski</li>
-                           <li class="txtsmall">Studienfachberaterin</li>
-                           <li class="tel">+49 6151 169 450</li>
-                           <li class="street-address hide">Max-Planck-Straße 2</li>
-                           <li class="hide"><span class="zip">64807</span>, <span class="state">Dieburg</span></li>
-                           <li class="state hide">Hessen</li>
-                         </ul>
-                         <a href="#" class="button" data-reveal-id="nopagehere">Kontakt</a>
-                       </div>
-                       <div class="large-6 medium-6 columns">
-                         <ul class="vcard">
-                           <li class="fn">Enes Ünal</li>
-                           <li class="txtsmall">Studentischer Berater</li>
-                           <li>@imd</li>
-                         </ul>
-                         <a href="#" class="button" data-reveal-id="nopagehere">Kontakt</a>
-                       </div>
-                     </div>
-                 </div>
-                 <div class="large-4 medium-4 ftcolumn columns">
-                   <h5>In Verbindung bleiben</h5>
-                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam </p>
-                   <a href="#" class="sociallink facebook">Facebook</a>
-                   <a href="#" class="sociallink twitter">Twitter</a>
-                   <a href="#" class="sociallink vimeo">Vimeo</a>
-                 </div>
-    </footer> 
-
      <div class="newsletter">
         <div class="row">
         <form>
@@ -365,8 +324,14 @@ Das Studium ist praxisorientiert. In jedem Semester werden in kleinen Teams Proj
     <script src="js/foundation/foundation.tooltip.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation({
+        topbar : {
+          custom_back_text: true,
+          back_text: 'Zurück'
+        }
+      });
     </script>
+    
     
 
   </body>

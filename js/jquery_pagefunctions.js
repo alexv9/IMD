@@ -88,21 +88,28 @@ $(document).ready(function() {
 	$(document).scroll(function() {
 		var scroll = $(document).scrollTop();
 		if ($("#header").hasClass("has-bigstage")) {
-			if(scroll >=600){
+			if(scroll >=660){
 				$('#pagenav').addClass('scrollednav');
-				$('#mcfooter').css('z-index', '2');
-			}else{
-				$('#pagenav').removeClass('scrollednav');
+				if (scroll >=800){
+					$('#mcfooter').css('z-index', '2');
+				}	
+			}
+			if (scroll <=799) {
 				$('#mcfooter').css('z-index', '0');
 			}
+			if (scroll <=0) {
+				$('#pagenav').removeClass('scrollednav');
+			}  
 		} else {
 			if(scroll >=380){
 				$('#pagenav').addClass('scrollednav');
-				$('#mcfooter').css('z-index', '2');
+				if (scroll >=500){
+					$('#mcfooter').css('z-index', '2');
+				}
 			}else{
 				$('#pagenav').removeClass('scrollednav');
 				$('#mcfooter').css('z-index', '0');
-			}
+			};
 		}
 	});
 
@@ -174,14 +181,5 @@ $(document).ready(function() {
 
 	});
 
-
-	// Mobile Nav Click Background in Stage
-
-	$(".menu-icon a").click(function() {
-		var scroll = $(document).scrollTop();
-		if(scroll <=500){
-			$("#pagenav").toggleClass("scrollednav");
-		}
-	});
 	
 });
