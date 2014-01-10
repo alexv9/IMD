@@ -5818,12 +5818,12 @@ a.close {
   background: #f3f5f7; }
 
 /* Header */
-.top-bar-section li a:not(.button) {
-  line-height: 98px; }
-
+/*.top-bar-section li a:not(.button) {
+  line-height: 98px;
+}
 .top-bar-section ul.dropdown li a:not(.button) {
-  line-height: 20px; }
-
+  line-height: 20px;
+}*/
 .row.headertxt {
   display: table;
   max-width: 720px;
