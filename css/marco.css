@@ -1,0 +1,23 @@
+
+.orbit-container .orbit-slides-container > *{
+    position: relative;
+	height: auto;
+}
+	
+.orbit-container .orbit-slides-container img {
+    display: inline-block;
+ 
+}
+
+.orbit-container .orbit-prev,
+  .orbit-container .orbit-next {
+    position: absolute;
+    top: 15%;
+    margin-top: -25px;
+    width: 36px;
+    height: 60px;
+    line-height: 50px;
+    color: white;
+    text-indent: -9999px !important;
+    z-index: 10;
+}
