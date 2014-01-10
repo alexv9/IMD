@@ -26,7 +26,7 @@ $(document).ready(function() {
     $(document).keyup(function (e) {
         if (e.keyCode === 27){ $close.trigger('click'); }
     });
-    $open.click(function () {
+    $open.click(function (event) {
     		event.preventDefault();
     		link = $(this).attr("href");
 	        offsetY = window.pageYOffset;
