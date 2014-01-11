@@ -169,7 +169,7 @@ $(document).ready(function() {
     function mcfooterheight(){
 
 	var width = $(window).width();
-	if(width>=767) {
+	if(width>=1025) {
 		var mcfooterHeight = $("#mcfooter").css('height');
 		$( "#page" ).css( "padding-bottom", mcfooterHeight );
     }else {

@@ -33,6 +33,10 @@ Page setup
 @media #{$medium-up} {
 
 
+h2 {
+  font-size:rem-calc(36);
+}
+
 /* Header */
 
 li.name h1 a span {

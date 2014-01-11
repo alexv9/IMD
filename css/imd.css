@@ -5753,7 +5753,7 @@ body.noscroll {
   position: fixed; }
 
 h2 {
-  font-size: 2.25rem; }
+  font-size: 1.625rem; }
 
 strong {
   font-family: 'hda_bold', sans-serif; }
@@ -6318,6 +6318,9 @@ Page setup
 *****************
 */
 @media only screen and (min-width: 40.063em) {
+  h2 {
+    font-size: 2.25rem; }
+
   /* Header */
   li.name h1 a span {
     margin-left: 8px; }
