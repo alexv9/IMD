@@ -267,20 +267,17 @@ header#pagenav a {
 }
 #content .maintext p {
   font-size:rem-calc(18);
-  -moz-column-count:2; 
-  -webkit-column-count:2; 
-  column-count:2;
-  column-gap: 1.875rem;
-  -webkit-column-gap: 1.875rem;
-  -moz-column-gap: 1.875rem;
   margin-bottom: 60px;
 }
-#content .row {
+#content .row, #mcfooter .row {
   padding-bottom:40px;
+}
+#mcfooter .row:last-child {
+  padding-bottom:0;
 }
 #content .section-teaser {
   text-align:center;
-  padding:80px 0px 60px 0px;
+  padding:rem-calc(60) 0;
 }
 #content .section-teaser h2 {
   color:#bec3c7;
@@ -503,8 +500,20 @@ table.shortinfotable tr th, table.shortinfotable tr td {
 	border:2px solid #76797c !important;
 	color: #76797c !important;
 }
+#mcfooter a.button:hover {
+  background:#76797c;
+  color:#1f1f20 !important;
+}
 #mcfooter .mediencampuslogo {
   padding-bottom:20px;
+}
+
+/* Orbit */
+
+.orbit-bullets li {
+  border:2px solid #ffffff;
+  width:rem-calc(12);
+  height:rem-calc(12);
 }
 
 /*Top Bar*/
@@ -517,6 +526,7 @@ li.name h1 a img {
 }
 li.name h1 a span {
   margin-left:0px;
+  font-size:rem-calc(22);
 }
 .top-bar-section .dropdown.desktopbar {
   background:#ffffff !important;

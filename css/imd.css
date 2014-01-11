@@ -3639,13 +3639,13 @@ kbd {
     display: block;
     width: 0.5625rem;
     height: 0.5625rem;
-    background: #cccccc;
+    background: none;
     float: left;
     margin-right: 6px;
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
     .orbit-bullets li.active {
-      background: #c52a2a; }
+      background: white; }
     .orbit-bullets li:last-child {
       margin-right: 0; }
 
@@ -4524,10 +4524,10 @@ meta.foundation-mq-topbar {
     .top-bar.expanded .title-area {
       background: transparent; }
     .top-bar.expanded .toggle-topbar a {
-      color: #888888; }
+      color: rgba(255, 255, 255, 0.5); }
       .top-bar.expanded .toggle-topbar a span {
-        -webkit-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
-        box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888; }
+        -webkit-box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
+        box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white; }
 
 .top-bar-section {
   left: 0;
@@ -4829,7 +4829,7 @@ hr {
   border: solid #dadfe3;
   border-width: 1px 0 0;
   clear: both;
-  margin: 2.5rem 0 2.4375rem;
+  margin: 0 0 -0.0625rem;
   height: 0; }
 
 /* Helpful Typography Defaults */
@@ -5945,20 +5945,17 @@ header#pagenav a {
 
 #content .maintext p {
   font-size: 1.125rem;
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-  column-count: 2;
-  column-gap: 1.875rem;
-  -webkit-column-gap: 1.875rem;
-  -moz-column-gap: 1.875rem;
   margin-bottom: 60px; }
 
-#content .row {
+#content .row, #mcfooter .row {
   padding-bottom: 40px; }
+
+#mcfooter .row:last-child {
+  padding-bottom: 0; }
 
 #content .section-teaser {
   text-align: center;
-  padding: 80px 0px 60px 0px; }
+  padding: 3.75rem 0; }
 
 #content .section-teaser h2 {
   color: #bec3c7; }
@@ -6158,8 +6155,18 @@ table.shortinfotable tr th, table.shortinfotable tr td {
   border: 2px solid #76797c !important;
   color: #76797c !important; }
 
+#mcfooter a.button:hover {
+  background: #76797c;
+  color: #1f1f20 !important; }
+
 #mcfooter .mediencampuslogo {
   padding-bottom: 20px; }
+
+/* Orbit */
+.orbit-bullets li {
+  border: 2px solid #ffffff;
+  width: 0.75rem;
+  height: 0.75rem; }
 
 /*Top Bar*/
 .top-bar-section li a:not(.button) {
@@ -6169,7 +6176,8 @@ li.name h1 a img {
   padding-bottom: 5px; }
 
 li.name h1 a span {
-  margin-left: 0px; }
+  margin-left: 0px;
+  font-size: 1.375rem; }
 
 .top-bar-section .dropdown.desktopbar {
   background: #ffffff !important;
@@ -6311,9 +6319,6 @@ Page setup
 */
 @media only screen and (min-width: 40.063em) {
   /* Header */
-  li.name h1 a {
-    font-size: 1.25rem; }
-
   li.name h1 a span {
     margin-left: 8px; }
 
@@ -6329,6 +6334,10 @@ Page setup
 
   #header.has-bigstage .teaser p {
     font-size: 2rem; }
+
+  #content .teaser p {
+    font-size: 2rem;
+    line-height: 3.125rem; }
 
   /* Content */
   #header.has-bigstage, #stagebg.has-bigstage {
@@ -6347,6 +6356,28 @@ Page setup
   table.shortinfotable tr th, table.shortinfotable tr td {
     font-size: 1.0rem; }
 
+  #content .maintext p {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    column-gap: 1.875rem;
+    -webkit-column-gap: 1.875rem;
+    -moz-column-gap: 1.875rem; }
+
+  /* orbit */
+  .slide-description {
+    position: relative;
+    max-height: 470px;
+    overflow: scroll;
+    -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(black), to(rgba(0, 0, 0, 0))); }
+
+  /*.slide-description .fadeout {
+      position: absolute; 
+      bottom: 0;
+      height: 100px;
+      width:100%;
+      background:#00ffff;
+  } */
   /* -Sub-Nav*/
   dl.sub-nav dd {
     width: auto; } }

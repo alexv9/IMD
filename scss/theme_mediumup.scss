@@ -35,9 +35,6 @@ Page setup
 
 /* Header */
 
-li.name h1 a {
-  font-size:rem-calc(20);
-}
 li.name h1 a span {
   margin-left:8px;
 }
@@ -53,6 +50,11 @@ li.name h1 a span {
 }
 #header.has-bigstage .teaser p {
   font-size:rem-calc(32);
+}
+
+#content .teaser p {
+  font-size:rem-calc(32);
+  line-height:rem-calc(50);
 }
 
 /* Content */
@@ -74,6 +76,30 @@ li.name h1 a span {
 table.shortinfotable tr th, table.shortinfotable tr td {
   font-size:1.0rem;
 }
+#content .maintext p {
+  -moz-column-count:2; 
+  -webkit-column-count:2; 
+  column-count:2;
+  column-gap: 1.875rem;
+  -webkit-column-gap: 1.875rem;
+  -moz-column-gap: 1.875rem;
+}
+
+/* orbit */
+
+.slide-description {
+  position:relative; 
+  max-height:470px;
+  overflow:scroll; 
+  -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+/*.slide-description .fadeout {
+    position: absolute; 
+    bottom: 0;
+    height: 100px;
+    width:100%;
+    background:#00ffff;
+} */
 
 /* -Sub-Nav*/
 

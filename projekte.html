@@ -6,8 +6,7 @@
     <title>IMD Dummy V 0.1</title>
     <link rel="stylesheet" href="css/imd.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-
-    <script src="../js/modernizr.js"></script>
+	<link rel="stylesheet" href="css/marco.css" />
 
   </head>
   <body>
@@ -22,7 +21,7 @@
             <!-- Title Area -->
             <li class="name">
               <h1>
-                <a href="startseite.html">
+                <a href="index.html">
                   <img src="img/hda_logo_white.svg" alt="h_da">
                   <span class="regular show-for-small-only title">IMD</span>
                   <span class="regular show-for-medium-up title">Interactive Media Design</span>
@@ -99,13 +98,13 @@
           <h3>Exunlimited</h3>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.
           </p>
-          <a href="#exunlimited" class="button open">Zum Projekt</a>
+          <a href="projekte/exunlimited.html" class="button open" id="asd">Zum Projekt</a>
         </div>
         <div class="large-4 medium-4 columns">
           <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
           <h3>Projekt 2</h3>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
-          <a href="#" class="button open">Zum Projekt</a>
+          <a href="projekte/testprojekt.html" class="button open">Zum Projekt</a>
         </div> 
         <div class="large-4 medium-4 columns">
           <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
@@ -145,62 +144,6 @@
         <p><span class="cit">„Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore aliquyam erat“</span><a href="studienverlauf.html" class="button whitebtn">Zu den Kursen</a></p>
 
       </div>
-
-   <footer id="footer">
-      
-         <div class="row">
-               <div class="large-4 medium-4 ftcolumn columns">
-                   <h5>Passt der Studiengang zu mir?</h5>
-                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam </p>
-                   <a href="#" class="button" data-reveal-id="nopagehere">Studienberater starten</a>
-                 </div>
-               <div class="large-4 medium-4 ftcolumn columns">
-                   <h5>Studienberatung</h5>
-                    <div class="row">
-                       <div class="large-6 medium-6 columns">
-                         <ul class="vcard">
-                           <li class="fn">Andrea Krajewski</li>
-                           <li class="txtsmall">Studienfachberaterin</li>
-                           <li class="tel">+49 6151 169 450</li>
-                           <li class="street-address hide">Max-Planck-Straße 2</li>
-                           <li class="hide"><span class="zip">64807</span>, <span class="state">Dieburg</span></li>
-                           <li class="state hide">Hessen</li>
-                         </ul>
-                         <a href="#" class="button" data-reveal-id="nopagehere">Kontakt</a>
-                       </div>
-                       <div class="large-6 medium-6 columns">
-                         <ul class="vcard">
-                           <li class="fn">Enes Ünal</li>
-                           <li class="txtsmall">Studentischer Berater</li>
-                           <li>@imd</li>
-                         </ul>
-                         <a href="#" class="button" data-reveal-id="nopagehere">Kontakt</a>
-                       </div>
-                     </div>
-                 </div>
-                 <div class="large-4 medium-4 ftcolumn columns">
-                   <h5>In Verbindung bleiben</h5>
-                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam </p>
-                   <a href="#" class="sociallink facebook">Facebook</a>
-                   <a href="#" class="sociallink twitter">Twitter</a>
-                   <a href="#" class="sociallink vimeo">Vimeo</a>
-                 </div>
-    </footer> 
-
-     <div class="newsletter">
-        <div class="row">
-        <form>
-          <div class="medium-8 columns">
-             <input type="text" id="right-label" placeholder="Ihre E-Mail Adresse">
-          </div>
-          <div class="medium-4 columns">
-             <a href="#" class="button whitebtn" data-reveal-id="nopagehere">Zum Bewerbungsreminder anmelden</a>
-          </div>
-      </form>
-      </div>
-      </div>
-
-
     
     </div>
 
@@ -259,122 +202,49 @@
 
     </div>
 
-  <!-- Start Project -->
+    <!-- Start Project -->
   <div id="overlay"></div>
-  <div id="popup">
-  <header id="popupnav">
-    <div class="wrapper">
-      <div class="row">
-        <div class="large-6 small-6 columns">
-          <a href="#" class="button">Teilen</a>
-        </div>
-        <div class="large-6 small-6 columns">
-          <a class="close right">&#215;</a>
-        </div>  
-      </div>
-    </div>
-  </header>
-  
-
-
-  <div id="content" class="wrapper">
-
-    <header>
-        <div class="row headertxt">
-          <div class="teaser">
-           
-              <h1>Projektname</h1>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed</p>
-              <p class="autor">Ein Studienprojekt von Marisa Wollner, Alexander Vonnemann, Marco Wicht und Sara Gottschalk</p>
-          
+    <div id="popup">
+      <header id="popupnav">
+        <div class="wrapper">
+          <div class="row">
+            <div class="large-6 small-6 columns">
+              <a href="#" class="button">Teilen</a>
+            </div>
+            <div class="large-6 small-6 columns">
+              <a class="close right">&#215;</a>
+            </div>  
           </div>
         </div>
-  </header>
+      </header>
 
+      <div id="content" class="wrapper popupcontent">
 
-      <ul class="example-orbit" data-orbit>
-            <li>
-              <img src="img/_test_img_4-3.jpg" alt="slide 1" />
-            </li>
-            <li>
-              <img src="img/_test_img_4-3.jpg" alt="slide 2" />
-            </li>
-            <li>
-              <img src="img/_test_img_4-3.jpg" alt="slide 3" />
-            </li>
-      </ul>
-
-
-
-      <div class="row maintext">
-        <div class="large-12 columns">
-          <p style="margin-bottom:0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-        </div>  
-      </div>
-
-      <img src="img/projekte/demo2.jpg" style="padding:0" />
-      <div class="row maintext">
-        <div class="large-12 columns">
-          <p style="margin-bottom:0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-        </div>  
-      </div>
-      <img src="img/projekte/demo3.jpg" style="padding:0" />
-      <div class="row maintext">
-        <div class="large-12 columns">
-          <p style="margin-bottom:0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
-        </div>  
-      </div>
-      <img src="img/projekte/demo4.jpg" style="padding:0" />
-      <hr style="margin:0">
-
-      <div class="row section-teaser">
-        <h2>Weitere interessante Projekte</h2>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-      </div>
-
-      <div class="row">
-        <div class="large-4 medium-4 columns">
-          <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
-          <h4>Überschrift h4</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
-          <a href="#" class="button">Button Text</a>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
-          <h4>Überschrift h4</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
-          <a href="#" class="button">Button Text</a>
-        </div>
-        <div class="large-4 medium-4 columns">
-          <img src="http://placehold.it/800x600/bec3c7/d2d6d9" alt="img">
-          <h4>Überschrift h4</h4>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed.</p>
-          <a href="#" class="button">Button Text</a>
-        </div>    
-      </div>
-
-  </div>
-
-</div>
-<!-- end project -->
-
-
-    <!-- Start Document experimental messages -->
-
-    <div id="nopagehere" class="reveal-modal small" data-reveal>
-      <h2>Seite in Arbeit</h2>
-      <p class="lead">Diese Seite ist im aktuellen Stand der Entwicklung nicht abgebildet. Für Fragen stehen wir gerne zur Verfügung.</p>
-      <p>Viele Grüße, <br/>Das Studiengangswebsite Projektteam</p>
-      <a class="close-reveal-modal">&#215;</a>
     </div>
+  </div>
+  <!-- end project -->
 
-    <!-- End Document experimental messages -->
 
-    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script src="js/modernizr.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.interchange.js"></script>
+    <script src="js/foundation/foundation.tooltip.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
+
+    <script src="plugins/headroom/headroom.js"></script>
+    <script src="plugins/headroom/jquery.headroom.js"></script>
+    
     <script src="js/jquery_pagefunctions.js"></script>
-    <script src="js/foundation.min.js"></script>
+
     <script>
-      $(document).foundation();
+      $(document).foundation({
+        topbar : {
+          custom_back_text: true,
+          back_text: 'Zurück'
+        }
+      });
     </script>
     
 

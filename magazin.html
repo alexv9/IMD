@@ -4,15 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <title>IMD Dummy V 0.1</title>
-    <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/imd.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
 
-      <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/small_screen.css">
-    <script src="../js/modernizr.js"></script>
-
-    <!-- Video JS -->
-    <link href="//vjs.zencdn.net/4.2/video-js.css" rel="stylesheet">
-    <script src="//vjs.zencdn.net/4.2/video.js"></script>
   </head>
   <body>
     
@@ -32,7 +26,7 @@
             <!-- Title Area -->
             <li class="name">
               <h1>
-                <a href="startseite.html">
+                <a href="index.html">
                   <img src="img/hda_logo_white.svg" alt="h_da">
                   <span class="regular show-for-small-only title">IMD</span>
                   <span class="regular show-for-medium-up title">Interactive Media Design</span>
@@ -174,62 +168,6 @@
         <p><span class="cit">„Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore aliquyam erat“</span></p>
 
       </div>
-
-   <footer id="footer">
-      
-         <div class="row">
-               <div class="large-4 medium-4 ftcolumn columns">
-                   <h5>Passt der Studiengang zu mir?</h5>
-                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam </p>
-                   <a href="#" class="button" data-reveal-id="nopagehere">Studienberater starten</a>
-                 </div>
-               <div class="large-4 medium-4 ftcolumn columns">
-                   <h5>Studienberatung</h5>
-                    <div class="row">
-                       <div class="large-6 medium-6 columns">
-                         <ul class="vcard">
-                           <li class="fn">Andrea Krajewski</li>
-                           <li class="txtsmall">Studienfachberaterin</li>
-                           <li class="tel">+49 6151 169 450</li>
-                           <li class="street-address hide">Max-Planck-Straße 2</li>
-                           <li class="hide"><span class="zip">64807</span>, <span class="state">Dieburg</span></li>
-                           <li class="state hide">Hessen</li>
-                         </ul>
-                         <a href="#" class="button" data-reveal-id="nopagehere">Kontakt</a>
-                       </div>
-                       <div class="large-6 medium-6 columns">
-                         <ul class="vcard">
-                           <li class="fn">Enes Ünal</li>
-                           <li class="txtsmall">Studentischer Berater</li>
-                           <li>@imd</li>
-                         </ul>
-                         <a href="#" class="button" data-reveal-id="nopagehere">Kontakt</a>
-                       </div>
-                     </div>
-                 </div>
-                 <div class="large-4 medium-4 ftcolumn columns">
-                   <h5>In Verbindung bleiben</h5>
-                   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam </p>
-                   <a href="#" class="sociallink facebook">Facebook</a>
-                   <a href="#" class="sociallink twitter">Twitter</a>
-                   <a href="#" class="sociallink vimeo">Vimeo</a>
-                 </div>
-    </footer> 
-
-     <div class="newsletter">
-        <div class="row">
-        <form>
-          <div class="medium-8 columns">
-             <input type="text" id="right-label" placeholder="Ihre E-Mail Adresse">
-          </div>
-          <div class="medium-4 columns">
-             <a href="#" class="button whitebtn" data-reveal-id="nopagehere">Zum Bewerbungsreminder anmelden</a>
-          </div>
-      </form>
-      </div>
-      </div>
-
-
     
     </div>
 
@@ -288,22 +226,26 @@
 
     </div>
 
-    <!-- Start Document experimental messages -->
+    <script type="text/javascript" src="js/jquery.js"></script>
 
-    <div id="nopagehere" class="reveal-modal small" data-reveal>
-      <h2>Seite in Arbeit</h2>
-      <p class="lead">Diese Seite ist im aktuellen Stand der Entwicklung nicht abgebildet. Für Fragen stehen wir gerne zur Verfügung.</p>
-      <p>Viele Grüße, <br/>Das Studiengangswebsite Projektteam</p>
-      <a class="close-reveal-modal">&#215;</a>
-    </div>
+    <script src="js/modernizr.js"></script>
+    <script src="js/foundation/foundation.js"></script>
+    <script src="js/foundation/foundation.interchange.js"></script>
+    <script src="js/foundation/foundation.tooltip.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
 
-    <!-- End Document experimental messages -->
-
-    <script src="js/jquery.js"></script>
+    <script src="plugins/headroom/headroom.js"></script>
+    <script src="plugins/headroom/jquery.headroom.js"></script>
+    
     <script src="js/jquery_pagefunctions.js"></script>
-    <script src="js/foundation.min.js"></script>
+
     <script>
-      $(document).foundation();
+      $(document).foundation({
+        topbar : {
+          custom_back_text: true,
+          back_text: 'Zurück'
+        }
+      });
     </script>
     
 
