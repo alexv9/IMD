@@ -341,21 +341,22 @@ header#pagenav a {
 /*- Block Newsletter */
 
 .newsletter {
-  background:lighten($primary-color, 6%);
   padding-top:50px;
+
 }
 .newsletter ::-webkit-input-placeholder {
-  color:rgba(255,255,255,0.3);
+  color:$primary-color;
   opacity:1 !important;
 }
 .newsletter input[type="text"] {
   background:transparent;
   border:none;
   font-size:2.5rem;
-  color:#ffffff;
+  color:$primary-color;
   height:100%;
   box-shadow:none;
   margin:0;
+  border-bottom: 1px solid $primary-color;
 }
 .newsletter .button {
   margin-top:8px;
