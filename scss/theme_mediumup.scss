@@ -36,7 +36,7 @@ Page setup
 /* Header */
 
 li.name h1 a {
-  font-size:20px
+  font-size:rem-calc(20);
 }
 li.name h1 a span {
   margin-left:8px;
@@ -45,14 +45,14 @@ li.name h1 a span {
   height:500px;
 }
 .teaser h1, #content .teaser h1 {
-    font-size:6.1rem; /* 48 / 14 */
+    font-size:rem-calc(58);
 }
 #header.has-bigstage .teaser h1 {
-    font-size:3.6rem;
+    font-size:rem-calc(58);
     padding-bottom:40px;
 }
 #header.has-bigstage .teaser p {
-  font-size:2.6rem;
+  font-size:rem-calc(32);
 }
 
 /* Content */
@@ -62,17 +62,17 @@ li.name h1 a span {
       height: 750px;
 }
 #content .splitter p .cit, #content .splitter p .splittercit-autor {
-  font-size:1.8rem;
+  font-size:rem-calc(24);
   line-height:3.1rem;
 }
 .teaser h1, #content .teaser h1 {
-  font-size:6.1rem;
+  font-size:rem-calc(98);
 }
 #content p {
   padding-right:20px;
 }
 table.shortinfotable tr th, table.shortinfotable tr td {
-  font-size:1.0rem;/* 16 / 14 */
+  font-size:1.0rem;
 }
 
 /* -Sub-Nav*/

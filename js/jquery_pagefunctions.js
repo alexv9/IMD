@@ -83,39 +83,49 @@ $(document).ready(function() {
 	});
 
 
-	// Change z-Index for Stage and Footer on Scroll
+	// Navbar change color on scroll after stage
 	
 	$(document).scroll(function() {
 		var scroll = $(document).scrollTop();
 		if(open == false){
+			// If header is a big stage
 			if ($("#header").hasClass("has-bigstage")) {
 				if(scroll >=660){
 					$('#pagenav').addClass('scrollednav');
-					if (scroll >=800){
-						$('#mcfooter').css('z-index', '2');
-					}	
+	
 				}
-				if (scroll <=799) {
-					$('#mcfooter').css('z-index', '0');
-				}
+				
 				if (scroll <=0) {
 					$('#pagenav').removeClass('scrollednav');
-				}  
+				} 
+			// If header is a regular stage 
 			} else {
 				if(scroll >=380){
 					$('#pagenav').addClass('scrollednav');
-					if (scroll >=500){
-						$('#mcfooter').css('z-index', '2');
-					}
+					
 				}else{
 					$('#pagenav').removeClass('scrollednav');
-					$('#mcfooter').css('z-index', '0');
+					
 				};
 			}
 		}
 	});
 
-		// Stage Nav Subnave Fullwidth from Medium Screens
+	// Navbar change color on scroll after stage: Mobile header on click -- marco --
+	$(".menu-icon a").click(function() {
+		var scroll = $(document).scrollTop();
+
+		if(open == false){
+				$("#pagenav").addClass("scrollednav");
+				open = true;
+			}else{
+				$("#pagenav").removeClass("scrollednav");
+				open = false;
+			}
+	});
+
+	
+	// Stage Nav Subnave Fullwidth from Medium Screens
 
 	function stagenavsub(){
 		var width = $(window).width();
@@ -154,8 +164,7 @@ $(document).ready(function() {
 	$(window).resize(resizeVideoJS);
 
 
-	// Mediencampus Footer Height Parallax
-
+	// Mediencampus Footer Height for Parallax
 
     function mcfooterheight(){
 
@@ -182,18 +191,22 @@ $(document).ready(function() {
 		slideDescriptions.eq(orbit.slide_number).addClass('active');
 
 	});
-	
-	// mobile header bleibt rot -- marco --
-	$(".menu-icon a").click(function() {
-		var scroll = $(document).scrollTop();
 
-		if(open == false){
-				$("#pagenav").addClass("scrollednav");
-				open = true;
-			}else{
-				$("#pagenav").removeClass("scrollednav");
-				open = false;
-			}
-	});
+
+	// Plugin: Headroom.js : Pagenav slide up/down on scroll 
+	$("#pagenav").headroom({
+        offset : 0,
+        tolerance : 10,
+        classes : {
+        // when element is initialised
+        initial : "animated",
+        // when scrolling up
+        pinned : "flipInX",
+        // when scrolling down
+        unpinned : "fadeOutUp"
+        }
+      });
+
+
 	
 });

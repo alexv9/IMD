@@ -67,7 +67,7 @@
         <div class="teaser animated fadeInUp">
          
           <p>Gestalte die Zukunft</p>
-          <h1>Studiere Interactive Media Design und entwerfe die  zukünftigen <strong class="rotate"> Interfaces,  Apps,  Websites,  Games, Installationen</strong></h1>
+          <h1>Studiere Interactive Media Design und entwerfe die<br/> <strong id="typed"></strong></h1>
           <a href="studium.html" id="scrolltocontent" class="button whitebtn cta">Jetzt bewerben</a>
         </div>
 
@@ -97,7 +97,7 @@
     <div class="cntwrapper">
     
       <div class="row section-teaser">
-        <h2>Praxisorientiert studieren <br />und fit für den Job werden</h2>
+        <h2>Praxisorientiert studieren</h2>
         <p>Interactive Media Design verbindet Praxis und Theorie in einem siebensemestrigen Bachelor Studiengang</p>
       </div>
 
@@ -243,8 +243,8 @@
       </div>
 
       <div class="row">
-        <div class="large-12 columns">
-          <a href="#" class="button bigbtn">Jetzt bewerben</a>
+        <div class="large-12 columns" style="text-align:center;">
+          <a href="#" class="button large centerbtn">Jetzt bewerben</a>
         </div>
       </div>
 
@@ -344,52 +344,48 @@
     <!-- End Document experimental messages -->
 
 
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
 
     <script src="js/modernizr.js"></script>
-    <script src="js/jquery_pagefunctions.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.interchange.js"></script>
     <script src="js/foundation/foundation.topbar.js"></script>
 
 
-    <link rel="stylesheet" type="text/css" href="plugins/simpletextrotator/simpletextrotator.css" />
-    <script src="plugins/simpletextrotator/jquery.simple-text-rotator.js"></script>
-
-    <style type="text/css">
-    @-webkit-keyframes slideDown{0%{-webkit-transform:translateY(-4em)}100%{-webkit-transform:translateY(0)}}@-moz-keyframes slideDown{0%{-moz-transform:translateY(-4em)}100%{-moz-transform:translateY(0)}}@-o-keyframes slideDown{0%{-o-transform:translateY(-4em)}100%{-o-transform:translateY(0)}}@keyframes slideDown{0%{transform:translateY(-4em)}100%{transform:translateY(0)}}.animated.slideDown{-webkit-animation-name:slideDown;-moz-animation-name:slideDown;-o-animation-name:slideDown;animation-name:slideDown}
-    </style>
 
     <script src="plugins/headroom/headroom.js"></script>
     <script src="plugins/headroom/jquery.headroom.js"></script>
-  
-     <script type="text/javascript">
-     $(document).ready(function() {
-      $("#pagenav").headroom({
-        offset : 0,
-        tolerance : 10,
-        classes : {
-        // when element is initialised
-        initial : "animated",
-        // when scrolling up
-        pinned : "slideDown",
-        // when scrolling down
-        unpinned : "fadeOutUp"
-        }
-      });
-      $(".rotate").textrotator({
-        animation: "flipUp",
-        speed: 2000
-      });
+
+    <link rel="stylesheet" href="plugins/typed/typed.css" />
+    <script src="plugins/typed/typed.js" type="text/javascript"></script>
+    
+    <script>
+      // Plugin: Typed.js : Header Text typing style
+      $("#typed").typed({
+        strings: ["Websites von morgen", "spannensten Apps", "zukünftigen Interfaces"],
+        typeSpeed: 30,
+        backDelay: 1000,
+        loop: true,
+        // defaults to false for infinite loop
+        loopCount: false,
+        callback: function(){ foo(); }
       });
     </script>
+    
+    <script src="js/jquery_pagefunctions.js"></script>
+
 
     <!-- Video JS -->
     <link href="css/video-js.css" rel="stylesheet">
     <script src="js/video.js"></script>
 
     <script>
-      $(document).foundation();
+      $(document).foundation({
+        topbar : {
+          custom_back_text: true,
+          back_text: 'Zurück'
+        }
+      });
     </script>
 
     
