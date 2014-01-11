@@ -3645,7 +3645,7 @@ kbd {
     -webkit-border-radius: 1000px;
     border-radius: 1000px; }
     .orbit-bullets li.active {
-      background: #999999; }
+      background: #c52a2a; }
     .orbit-bullets li:last-child {
       margin-right: 0; }
 
@@ -5804,6 +5804,9 @@ a.close {
 .txtright {
   text-align: right; }
 
+.txtcenter {
+  text-align: center; }
+
 .txtsmall {
   font-size: 0.9rem; }
 
@@ -6011,21 +6014,21 @@ header#pagenav a {
 
 /*- Block Newsletter */
 .newsletter {
-  background: #d53939;
   padding-top: 50px; }
 
 .newsletter ::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: #c52a2a;
   opacity: 1 !important; }
 
 .newsletter input[type="text"] {
   background: transparent;
   border: none;
   font-size: 2.5rem;
-  color: #ffffff;
+  color: #c52a2a;
   height: 100%;
   box-shadow: none;
-  margin: 0; }
+  margin: 0;
+  border-bottom: 1px solid #c52a2a; }
 
 .newsletter .button {
   margin-top: 8px;
