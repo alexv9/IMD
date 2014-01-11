@@ -5802,6 +5802,9 @@ a.close {
 .txtright {
   text-align: right; }
 
+.txtcenter {
+  text-align: center; }
+
 .txtsmall {
   font-size: 0.9rem; }
 
