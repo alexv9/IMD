@@ -7,6 +7,15 @@ Last changes: 2013/12/07
 
 */
 
+$(window).load(function() { 
+
+		// Preloader
+      $('#status').fadeOut();
+      $('#preloader').delay(350).fadeOut('slow'); 
+      $('body').delay(350).removeClass('noscroll');
+
+
+}); 
 
 
 $(document).ready(function() {

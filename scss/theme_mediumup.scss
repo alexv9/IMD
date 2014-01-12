@@ -48,9 +48,11 @@ li.name h1 a span {
 .teaser h1, #content .teaser h1 {
     font-size:rem-calc(58);
 }
-#header.has-bigstage .teaser h1 {
+#header.has-bigstage .teaser h1, #header.has-bigstage .teaser h5  {
     font-size:rem-calc(58);
-    padding-bottom:40px;
+}
+#header.has-bigstage .teaser h5 {
+  margin-bottom:40px;
 }
 #header.has-bigstage .teaser p {
   font-size:rem-calc(32);
@@ -77,6 +79,9 @@ li.name h1 a span {
 #content p {
   padding-right:20px;
 }
+#content .txtcenter p {
+  padding-right:0;
+}
 table.shortinfotable tr th, table.shortinfotable tr td {
   font-size:1.0rem;
 }
@@ -88,6 +93,12 @@ table.shortinfotable tr th, table.shortinfotable tr td {
   -webkit-column-gap: 1.875rem;
   -moz-column-gap: 1.875rem;
 }
+
+
+.button.medium-giant {
+  font-size:rem-calc(26);
+}
+
 
 /* orbit */
 

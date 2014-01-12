@@ -137,6 +137,30 @@ a.close {
   background:#f3f5f7;
 }
 
+/* Preloader */
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#ffffff; /* change if the mask should have another color then white */
+    z-index:999; /* makes sure it stays on top */
+}
+
+#status {
+    width:50px;
+    height:100px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/loader.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-50px 0 0 -25px; /* is width and height divided by two */
+}
+
 /* Header */
 /*.top-bar-section li a:not(.button) {
   line-height: 98px;
@@ -169,28 +193,28 @@ a.close {
     font-size:rem-calc(36);
     padding-top:80px;
 }
-#header .teaser h1 {
+#header .teaser h1, #header .teaser h5 {
    color:#ffffff;
-   font-weight:bold; 
    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   font-family:'hda_bold', sans-serif;
 }
 #content #bigtitle .teaser h1 {
   color:#ffffff;
 }
-#header.has-bigstage .teaser h1 {
+#header.has-bigstage .teaser h1, #header.has-bigstage .teaser h5 {
     font-size:1.6rem;
-    padding-bottom:20px;
-    padding-top:0;
+    padding:0;
+    margin:0;
     font-family: 'hda_regular', sans-serif;
+}
+#header.has-bigstage .teaser h5 {
+  margin-bottom:20px;
+  font-family:'hda_bold', sans-serif;
 }
 #header.has-bigstage .teaser p {
   padding-top:80px;
   font-size:rem-calc(24);
   color:rgba(255,255,255,0.8);
-}
-#header.has-bigstage .teaser h1 strong {
-  font-family:'hda_bold', sans-serif;
 }
 
 #header .teaser p, #bigtitle .teaser p {

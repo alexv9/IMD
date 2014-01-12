@@ -5822,6 +5822,33 @@ a.close {
 .lightgraybg {
   background: #f3f5f7; }
 
+/* Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  /* change if the mask should have another color then white */
+  z-index: 999;
+  /* makes sure it stays on top */ }
+
+#status {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(../img/loader.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -50px 0 0 -25px;
+  /* is width and height divided by two */ }
+
 /* Header */
 /*.top-bar-section li a:not(.button) {
   line-height: 98px;
@@ -5854,28 +5881,28 @@ a.close {
   font-size: 2.25rem;
   padding-top: 80px; }
 
-#header .teaser h1 {
+#header .teaser h1, #header .teaser h5 {
   color: #ffffff;
-  font-weight: bold;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   font-family: 'hda_bold', sans-serif; }
 
 #content #bigtitle .teaser h1 {
   color: #ffffff; }
 
-#header.has-bigstage .teaser h1 {
+#header.has-bigstage .teaser h1, #header.has-bigstage .teaser h5 {
   font-size: 1.6rem;
-  padding-bottom: 20px;
-  padding-top: 0;
+  padding: 0;
+  margin: 0;
   font-family: 'hda_regular', sans-serif; }
+
+#header.has-bigstage .teaser h5 {
+  margin-bottom: 20px;
+  font-family: 'hda_bold', sans-serif; }
 
 #header.has-bigstage .teaser p {
   padding-top: 80px;
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.8); }
-
-#header.has-bigstage .teaser h1 strong {
-  font-family: 'hda_bold', sans-serif; }
 
 #header .teaser p, #bigtitle .teaser p {
   color: #ffffff; }
@@ -6331,9 +6358,11 @@ Page setup
   .teaser h1, #content .teaser h1 {
     font-size: 3.625rem; }
 
-  #header.has-bigstage .teaser h1 {
-    font-size: 3.625rem;
-    padding-bottom: 40px; }
+  #header.has-bigstage .teaser h1, #header.has-bigstage .teaser h5 {
+    font-size: 3.625rem; }
+
+  #header.has-bigstage .teaser h5 {
+    margin-bottom: 40px; }
 
   #header.has-bigstage .teaser p {
     font-size: 2rem; }
@@ -6356,6 +6385,9 @@ Page setup
   #content p {
     padding-right: 20px; }
 
+  #content .txtcenter p {
+    padding-right: 0; }
+
   table.shortinfotable tr th, table.shortinfotable tr td {
     font-size: 1.0rem; }
 
@@ -6366,6 +6398,9 @@ Page setup
     column-gap: 1.875rem;
     -webkit-column-gap: 1.875rem;
     -moz-column-gap: 1.875rem; }
+
+  .button.medium-giant {
+    font-size: 1.625rem; }
 
   /* orbit */
   .slide-description {
@@ -6422,6 +6457,13 @@ Last changes: 2014/01/04
 
   header {
     position: relative; }
+
+  /* Navbar */
+  .top-bar-section li a:not(.button) {
+    line-height: 103px; }
+
+  .top-bar-section li .dropdown a:not(.button) {
+    line-height: 16px; }
 
   /* Content */
   #content {
