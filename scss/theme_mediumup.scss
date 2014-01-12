@@ -99,6 +99,39 @@ table.shortinfotable tr th, table.shortinfotable tr td {
   font-size:rem-calc(26);
 }
 
+/* Reminder Form */
+
+#reminder {
+  max-width:620px;
+  margin:0 auto;
+}
+#reminder input[type="email"], button.submitreminder {
+  height:68px;
+}
+#reminder input[type="email"] {
+  border-bottom:2px solid #dadfe3;
+  border-right:0;
+  border-top-right-radius:0;
+  border-bottom-left-radius:$global-radius;
+  font-size:rem-calc(32);
+  padding:rem-calc(32);
+}
+#reminder .columns:first-child {
+  padding-right:0;
+}
+#reminder .columns.buttomclm {
+  padding-left:0;
+}
+#reminder button.submitreminder {
+  font-size:rem-calc(22);
+  padding:rem-calc(16);
+  width:100%;
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
+  border-top-right-radius:$global-radius;
+}
+
+
 
 /* orbit */
 

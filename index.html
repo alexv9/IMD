@@ -378,11 +378,7 @@
     <script src="plugins/textillate/jquery.textillate.js"></script>
     
     <script>
-      
       $(window).load(function() {
-
-
-
         // Plugin: textillate.js : Header Text typing style
         $('.textanimation').textillate({
           selector: '.texts',
@@ -390,8 +386,8 @@
           minDisplayTime: 2000,
           autoStart: true,
           in: {
-            effect: 'fadeIn',
-            sequence: true
+            effect: 'fadeInUp',
+            sync: true
           },
           out: {
             effect: 'fadeOut',

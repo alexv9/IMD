@@ -88,18 +88,23 @@
         <p> Wir benachrichtigen Sie gerne über anstehende Termine, informieren Sie zu Bewerbungsformalitäten und zu Veranstaltungen. </p>
       </div>
 
-      <div class="newsletter">
+
         <div class="row">
-        <form>
-          <div class="medium-8 columns">
-             <input type="text" id="right-label" placeholder="Ihre E-Mail Adresse">
-          </div>
-          <div class="medium-4 columns">
-             <a href="#" class="button" data-reveal-id="nopagehere">Zum Bewerbungsreminder anmelden</a>
+        <form id="reminder" data-abide="ajax">
+            <div class="small-12 medium-9 columns">
+             <input type="email" id="email" class="giantinput" placeholder="Deine E-Mail Adresse" required> 
+             <small class="error">Valide E-Mail-Adresse notwendig.</small>
+            </div>
+            <div class="small-12 medium-3 columns buttomclm">
+              <button type="submit" class="submitreminder">Absenden</button>
+            </div>
+          <div class="small-12 txtcenter columns">
+            <input id="checkbox1" type="checkbox" checked><label for="checkbox1">Infoveranstaltungen</label>
+            <input id="checkbox2" type="checkbox" checked><label for="checkbox2">Bewerbungsstart</label>
           </div>
         </form>
         </div>
-      </div>
+
 
       <hr />
 
@@ -337,7 +342,7 @@
     <script src="js/modernizr.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.interchange.js"></script>
-    <script src="js/foundation/foundation.tooltip.js"></script>
+    <script src="js/foundation/foundation.abide.js"></script>
     <script src="js/foundation/foundation.accordion.js"></script>
     <script src="js/foundation/foundation.tab.js"></script>
 
@@ -353,6 +358,27 @@
           back_text: 'Zurück'
         }
       });
+    </script>
+
+    <script>
+    $(window).load(function() {
+      $('#reminder').on('valid', function(e){
+          e.preventDefault();
+          e.stopPropagation(); 
+         var email = $("#email").val();
+
+
+         jQuery.ajax({
+            type:"POST",
+            url:"php/mailer.php",
+            data: email,
+            success: function(){
+              alert('done!');
+            }
+         });
+          return false;
+      });
+    });
     </script>
     
 

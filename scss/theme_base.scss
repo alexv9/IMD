@@ -106,7 +106,6 @@ button.whitebtn.cta, .button.whitebtn.cta {
 }
 a.close {
   border:0;
-  padding-top:8px;
 }
 .bigtxt {
    font-size:1.1rem;/* 16 / 14 */;
@@ -358,31 +357,40 @@ header#pagenav a {
   line-height:2.1rem;
 }
 
-/*- Block Newsletter */
+/* Form */
 
-.newsletter {
-  padding-top:50px;
-
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+  -webkit-border-radius: $global-radius;
+  border-radius:$global-radius; 
 }
-.newsletter ::-webkit-input-placeholder {
-  color:$primary-color;
-  opacity:1 !important;
-}
-.newsletter input[type="text"] {
-  background:transparent;
-  border:none;
-  font-size:2.5rem;
-  color:$primary-color;
-  height:100%;
-  box-shadow:none;
-  margin:0;
-  border-bottom: 1px solid $primary-color;
-}
-.newsletter .button {
-  margin-top:8px;
-  font-family:'hda_bold', sans-serif;
+input[type="text"].giantinput {
+  font-size:rem-calc(16); 
+  padding:rem-calc(16);
+  height:auto;
 }
 
+/* Reminder Form */
+
+#reminder {
+  max-width:620px;
+  margin:0 auto;
+}
+#reminder input[type="email"] {
+  border-bottom:0;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+  margin-bottom:0;
+  font-size:rem-calc(22);
+  padding:rem-calc(28);
+}
+#reminder button.submitreminder {
+  font-size:rem-calc(16);
+  padding:rem-calc(16);
+  border:2px solid $primary-color !important;
+  width:100%;
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+}
 
 /* -Sub Navigation */
 
@@ -463,6 +471,10 @@ a.tag {
 .tabs-content > .content {
   padding-top:60px;
 }
+
+/* Accordion */
+
+
 
 /* -Orbit */
 
@@ -623,14 +635,17 @@ li.name h1 a span {
   width:100%;
   z-index:999999;
 } 
+#popupnav {
+  box-shadow:0px 0px 36px rgba(0, 0, 0, 0.1);
+  overflow:hidden;
+}
 #popup .close {
-   font-size:rem-calc(36);
+   font-size:rem-calc(46);
    font-weight:bold;
 }
 #popupnav .wrapper {
   padding:30px 0;
   background:rgba(255,255,255,0.95);
-  box-shadow:0px 0px 36px rgba(0, 0, 0, 0.1);
 }
 
 #popup #popupnav button, #popup #popupnav .button {
