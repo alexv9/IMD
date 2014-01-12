@@ -5,30 +5,29 @@
 ]>
 <svg version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="300px" height="300px" viewBox="0 -45.403 300 300"
-	 overflow="visible" enable-background="new 0 -45.403 300 300" xml:space="preserve">
+	 x="0px" y="0px" width="300px" height="300px" viewBox="-1.413 -41.751 300 300"
+	 overflow="visible" enable-background="new -1.413 -41.751 300 300" xml:space="preserve">
 <defs>
 </defs>
 <path fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M100.574,84.187l141.239,137.77c0.812,18.339,0.459,30.002-28.643,31.29L82.97,100.313"/>
-<path fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M153.469,77.233
-	c0,42.106-34.128,76.238-76.235,76.238C35.125,153.472,1,119.34,1,77.233C1,35.129,35.125,1,77.234,1
-	C119.341,1,153.469,35.129,153.469,77.233z"/>
-<polyline fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-miterlimit="10" points="124.888,115.136 91.694,101.771 
-	91.694,85.016 "/>
-<polyline fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-miterlimit="10" points="61.463,84.52 61.463,101.771 
-	30.646,114.781 "/>
-<path fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-miterlimit="10" d="M103.962,57.806
-	c0,17.945-12.127,32.499-27.076,32.499c-14.964,0-27.082-14.554-27.082-32.499c0-17.944,12.118-32.492,27.082-32.492
-	C91.835,25.313,103.962,39.861,103.962,57.806z"/>
-<path fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-miterlimit="10" d="M103.708,53.584
-	c-0.878,0.102-2.087,0.047-2.973,0.22c-8.817,1.701-14.477-1.496-19.338-9.997c-2.919,5.584-12.022,9.997-19.504,9.997
-	c-3.691,0-8.244-0.923-11.42-2.581"/>
+	M94.727,77.32l150.019,146.335c0.862,19.479,0.488,31.867-30.423,33.236L76.028,94.45"/>
+<path fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M138.873,69.936
+	c0,38.076-30.861,68.94-68.937,68.94C31.858,138.876,1,108.012,1,69.936C1,31.86,31.858,1,69.936,1
+	C108.012,1,138.873,31.86,138.873,69.936z"/>
+<polyline fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-miterlimit="10" points="113.027,104.21 83.011,92.125 
+	83.011,76.974 "/>
+<polyline fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-miterlimit="10" points="55.675,76.524 55.675,92.125 
+	27.808,103.89 "/>
+<path fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-miterlimit="10" d="M94.105,52.368
+	c0,16.227-10.966,29.388-24.484,29.388c-13.531,0-24.49-13.161-24.49-29.388c0-16.228,10.958-29.383,24.49-29.383
+	C83.14,22.985,94.105,36.141,94.105,52.368z"/>
+<path fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-miterlimit="10" d="M93.875,48.55
+	c-0.794,0.093-1.887,0.043-2.688,0.2c-7.974,1.538-13.09-1.354-17.486-9.041c-2.64,5.05-10.872,9.041-17.637,9.041
+	c-3.337,0-7.454-0.835-10.327-2.335"/>
 <path fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M193.561,92.068L68.298,225.539c0,17.028,0.804,27.827,27.826,27.827l114.414-147.071"/>
+	M183.936,85.693L50.884,227.461c0,18.088,0.854,29.558,29.556,29.558l121.526-156.215"/>
 <path fill="none" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M298.855,46.662c-37.509-1.856-32.881,32.849-43.816,47.515c-11.59,15.527-36.06,19.719-51.588,8.136
-	C153.103,64.767,243.203-8.99,298.855,46.662z"/>
-<line fill="none" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="196.982" y1="123.666" x2="179.97" y2="106.656"/>
-<circle fill="none" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="77.527" cy="76.412" r="67.557"/>
+	M295.775,37.464c-39.841-1.972-34.926,34.891-46.541,50.469c-12.31,16.492-38.301,20.944-54.794,8.642
+	C140.962,56.693,236.663-21.649,295.775,37.464z"/>
+<line fill="none" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="187.569" y1="119.255" x2="169.499" y2="101.188"/>
 </svg>

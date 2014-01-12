@@ -39,8 +39,6 @@
 <line fill="none" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.915" y1="116.182" x2="17.915" y2="141.276"/>
 <polyline fill="none" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
 	17.915,141.276 9.457,189.198 29.189,189.198 17.915,141.276 "/>
-<polyline fill="none" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="45.289,210.946 
-	82.751,248.274 120.323,210.946 "/>
 <path fill="#FFFFFF" stroke="#C73434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 	M212.273,68.862c0,2.355-1.909,4.266-4.266,4.266h-5.882V88.35l-19.711-15.223h-63.984c-2.354,0-4.266-1.91-4.266-4.266V13.923
 	c0-3.382,1.691-5.074,4.266-5.074h89.577c2.576,0,4.266,1.692,4.266,5.074V68.862z"/>
