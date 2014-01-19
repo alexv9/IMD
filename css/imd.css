@@ -5989,7 +5989,7 @@ header#pagenav a {
 
 /* -Splitter */
 #content .splitter {
-  height: 520px;
+  height: 580px;
   display: table;
   width: 100%;
   background: #d53939; }
@@ -6005,8 +6005,12 @@ header#pagenav a {
   max-width: 800px;
   display: block;
   text-shadow: 0 0 8px #727679;
+  font-family: 'hda_medium';
   font-size: 1.5rem;
   margin: 0 auto; }
+
+#content .splitter p .splittercit-autor {
+  font-family: 'hda_regular'; }
 
 #content .splitter p .splittercit-autor {
   padding-top: 40px;
@@ -6370,7 +6374,7 @@ Page setup
     height: 750px; }
 
   #content .splitter p .cit, #content .splitter p .splittercit-autor {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     line-height: 3.1rem; }
 
   .teaser h1, #content .teaser h1 {

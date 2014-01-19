@@ -328,7 +328,7 @@ header#pagenav a {
 /* -Splitter */
 
 #content .splitter {
-  height:520px;
+  height:580px;
   display:table;
   width:100%;
   background:lighten($primary-color, 6%);
@@ -344,9 +344,14 @@ header#pagenav a {
   max-width:800px;
   display:block;
   text-shadow: 0 0 8px $body-font-color;
+  font-family: 'hda_medium';
   font-size:rem-calc(24);
   margin:0 auto;
 }
+#content .splitter p .splittercit-autor {
+  font-family: 'hda_regular';
+}
+
 #content .splitter p .splittercit-autor {
   padding-top:40px;
   font-size:rem-calc(18);
