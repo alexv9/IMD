@@ -210,9 +210,9 @@ $(document).ready(function() {
         // when element is initialised
         initial : "animated",
         // when scrolling up
-        pinned : "flipInX",
+        pinned : "fadeIn",
         // when scrolling down
-        unpinned : "fadeOutUp"
+        unpinned : "slideOutUp"
         }
       });
 
