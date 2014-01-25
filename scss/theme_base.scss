@@ -233,7 +233,7 @@ a.close {
   overflow:hidden;
   width:100%;
   z-index:-1;
-  background:lighten($primary-color, 6%);
+  background:$header-background;
 }
 #stagebg img {
   max-width:inherit;
@@ -329,29 +329,45 @@ header#pagenav a {
 
 #content .splitter {
   height:580px;
+  overflow:hidden;
+  background:$splitter-background;
+  position:relative;
+}
+#content .splitter .splitter_cnt {
   display:table;
+  position:absolute;
+  z-index:2;
   width:100%;
-  background:lighten($primary-color, 6%);
+  height:100%;
 }
 #content .splitter p {
   text-align:center;
-  display:table-cell;
   vertical-align:middle;
+  display:table-cell;
   font-style:italic;
   color:#ffffff;
+  font-family: 'hda_regular';
+}
+#content .splitter img.splitterimg, #stagebg img.splitterimg {
+  height:100%;
+  width:auto;
+  max-width:none;
+  padding:0;
+  position: absolute;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  filter:alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+  opacity:.50;
 }
 #content .splitter p .cit, #content .splitter p .splittercit-autor {
   max-width:800px;
   display:block;
   text-shadow: 0 0 8px $body-font-color;
-  font-family: 'hda_medium';
   font-size:rem-calc(24);
   margin:0 auto;
 }
-#content .splitter p .splittercit-autor {
-  font-family: 'hda_regular';
-}
-
 #content .splitter p .splittercit-autor {
   padding-top:40px;
   font-size:rem-calc(18);
