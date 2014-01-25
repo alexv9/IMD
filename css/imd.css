@@ -6005,8 +6005,12 @@ header#pagenav a {
   max-width: 800px;
   display: block;
   text-shadow: 0 0 8px #727679;
+  font-family: 'hda_medium';
   font-size: 1.5rem;
   margin: 0 auto; }
+
+#content .splitter p .splittercit-autor {
+  font-family: 'hda_regular'; }
 
 #content .splitter p .splittercit-autor {
   padding-top: 40px;
@@ -6369,8 +6373,13 @@ Page setup
   #header.has-bigstage, #stagebg.has-bigstage {
     height: 750px; }
 
+<<<<<<< HEAD
   #content .splitter p .cit {
     font-size: 2rem;
+=======
+  #content .splitter p .cit, #content .splitter p .splittercit-autor {
+    font-size: 1.625rem;
+>>>>>>> 8042fd14a64c62452e761fb60621499a98e3409b
     line-height: 3.1rem; }
 
   #content .splitter p .splittercit-autor {
