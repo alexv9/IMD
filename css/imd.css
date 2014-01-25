@@ -5801,7 +5801,7 @@ a.close {
   .show-for-small-only.title {
     display: inline !important; } }
 .lightgraybg {
-  background: #f3f5f7; }
+  background: #f5f8fa; }
 
 /* Preloader */
 #preloader {
@@ -5917,8 +5917,7 @@ a.close {
 #content {
   position: relative;
   background: #ffffff;
-  border-bottom: 2px solid #1d1d1e;
-  box-shadow: 0px 36px 36px rgba(0, 0, 0, 0.4); }
+  box-shadow: -5px 36px 36px rgba(0, 0, 0, 0.4); }
 
 .cntwrapper {
   background: #ffffff; }
@@ -6172,7 +6171,7 @@ table.shortinfotable tr th, table.shortinfotable tr td {
 /* MC Footer */
 #mcfooter {
   width: 100%;
-  background: #1f1f20;
+  background: #1d1f20 url(../img/mcfooter_bg.png);
   padding: 60px 0 20px 0; }
 
 #mcfooter hr {

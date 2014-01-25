@@ -130,7 +130,7 @@
       </div>
 
       <hr/>
-
+      <div class="lightgraybg">
       <div class="row section-teaser">
         <h2>Aus spannenden Projekten lernen</h2>
         <p>Die Projektarbeit ist auf die Wirtschaft ausgelegt und entspricht deren Projektstrukturen. Somit können Studierende bereits im Studium lernen wie der Job funktioniert.</p>
@@ -156,6 +156,7 @@
           <a href="#" class="button">Zum Projekt</a>
         </div>    
       </div>
+    </div>
 
 
 
@@ -294,7 +295,7 @@
       </div>
 
       <hr/>
-
+      <div class="lightgraybg">
        <div class="row section-teaser">
         <h2>Noch Fragen?</h2>
         <p>Wir beraten dich gerne in einem persönlichen Gespräch</p>
@@ -312,7 +313,7 @@
           <a href="mailto:studienberatung.imd.fbmd@h-da.de" class="button">E-Mail schreiben</a>
         </div>    
       </div>
-
+    </div>
     
     </div>
 
@@ -336,31 +337,30 @@
             <img src="img/mediencampus_logo.png" alt="Mediencampus" class="mediencampuslogo" />
           </div>
           <div class="large-8 columns">
-            <p>Am Mediencampus der Hochschule Darmstadt werden Studierende in neun Studiengängen auf verschiedene Beschäftigungsfelder in der Medienindustrie vorbereitet.<br/><a href="http://mediencampus.h-da.de/">Mehr über den Mediencampus.</a>
-            </p>
+            <p>Am Mediencampus der Hochschule Darmstadt werden Studierende in neun Studiengängen auf verschiedene Beschäftigungsfelder in der Medienindustrie vorbereitet.</p>
           </div>
         </div>
         <div class="row">
         
            <div class="large-3 columns">
-            <h6>Interactive Media Design</h6>
-            <p>Interactive Media Design verbindet Design, Strategie und Technik in einem praxisorientierten siebensemestrigen Studiengang, um Konzepte und interaktive Produkte für das Leben, Lernen und Arbeiten von morgen zu gestalten.</p>
-            <a href="#" class="button">Zum Studiengang</a>
+            <h6>Studieren am Mediencampus</h6>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+            <a href="mediencampus.h-da.de/studium" class="button">Mehr erfahren</a>
           </div>
           <div class="large-3 columns">
-            <h6>Animation and Game</h6>
-            <p>Animation and Game bereitet in einem siebensemestrigen interdisziplinären Studium mit moderner Ausstattung und Dozenten mit fundiertem Praxishintergrund auf Berufe in der internationalen Medienindustrie vor.</p>
-            <a href="http://ag.mediencampus.h-da.de/" class="button">Zum Studiengang</a>
+            <h6>Campusleben</h6>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+            <a href="#" class="button">Mehr erfahren</a>
           </div>
           <div class="large-3 columns">
-            <h6>Video Motion Pictures</h6>
-            <p>Video Motion Pictures bietet eine attraktive und zukunftsweisende Ausbildung in dem dynamischen Umfeld der Medien und bereitet auf ein Berufsleben in der Medienbranche Film und Fernsehen vor.</p>
-            <a href="http://mp.fbmd.h-da.de/" class="button">Zum Studiengang</a>
+            <h6>Forschung und Entwicklung</h6>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+            <a href="#" class="button">Mehr erfahren</a>
           </div>
           <div class="large-3 columns">
-            <h6>Sound and Music Production</h6>
-            <p>Sound and Music Production verbindet praxisorientiertes Arbeiten an Projekten aus Sound-Design und Musikproduktion mit einer fundierten theoretischen Ausbildung in einem sieben- semestrigen Bachelorstudiengang.</p>
-            <a href="http://smp.fbmd.h-da.de/" class="button">Zum Studiengang</a>
+            <h6>Mediencampus Magazin</h6>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+            <a href="#" class="button">Mehr erfahren</a>
           </div>
         </div>
         <div class="row">
@@ -430,8 +430,15 @@
           back_text: 'Zurück'
         }
       });
-    </script>
 
+      $(window).load(function() { 
+         // Teaser text fade out on scroll down
+        $(window).scroll(function(i){
+        var scrollVar = $(window).scrollTop();
+        $('.teaser p, .teaser h1, .teaser a, .teaser h5').css({'opacity':( 180-scrollVar )/180});
+        });
+      });
+    </script>
 
 
     
