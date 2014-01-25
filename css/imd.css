@@ -6373,13 +6373,8 @@ Page setup
   #header.has-bigstage, #stagebg.has-bigstage {
     height: 750px; }
 
-<<<<<<< HEAD
   #content .splitter p .cit {
     font-size: 2rem;
-=======
-  #content .splitter p .cit, #content .splitter p .splittercit-autor {
-    font-size: 1.625rem;
->>>>>>> 8042fd14a64c62452e761fb60621499a98e3409b
     line-height: 3.1rem; }
 
   #content .splitter p .splittercit-autor {
