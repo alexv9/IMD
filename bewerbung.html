@@ -90,17 +90,17 @@
 
 
         <div class="row">
-        <form id="reminder" data-abide="ajax">
+        <form id="reminder" action="http://h-da.us3.list-manage1.com/subscribe/post?u=a81cef1311a1793f94daeab4d&amp;id=3ca6ef34cd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" data-abide="ajax">
             <div class="small-12 medium-9 columns">
-             <input type="email" id="email" class="giantinput" placeholder="Deine E-Mail Adresse" required> 
+             <input type="email"  id="mce-EMAIL" name="EMAIL" class="giantinput" placeholder="Deine E-Mail Adresse" required> 
              <small class="error">Valide E-Mail-Adresse notwendig.</small>
             </div>
             <div class="small-12 medium-3 columns buttomclm">
               <button type="submit" class="submitreminder">Absenden</button>
             </div>
           <div class="small-12 txtcenter columns">
-            <input id="checkbox1" type="checkbox" checked><label for="checkbox1">Infoveranstaltungen</label>
-            <input id="checkbox2" type="checkbox" checked><label for="checkbox2">Bewerbungsstart</label>
+            <input id="checkbox1" type="checkbox" vvalue="2" name="group[6797][2]" id="mce-group[6797]-6797-1" checked><label for="mce-group[6797]-6797-1">Infoveranstaltungen</label>
+            <input type="checkbox" value="1" name="group[6797][1]" id="mce-group[6797]-6797-0"  checked><label for="mce-group[6797]-6797-0">Bewerbungsstart</label>
           </div>
         </form>
         </div>
@@ -369,14 +369,7 @@
          var email = $("#email").val();
 
 
-         jQuery.ajax({
-            type:"POST",
-            url:"php/mailer.php",
-            data: email,
-            success: function(){
-              alert('done!');
-            }
-         });
+         $("#reminder").submit();
           return false;
       });
     });
