@@ -113,9 +113,11 @@ $(document).ready(function() {
 			} else {
 				if(scroll >=380){
 					$('#pagenav').addClass('scrollednav');
+					$('.top-bar, .top-bar .name h1, .top-bar-section li a:not(.button), .top-bar .name').addClass('smalltopbar');
 					
 				}else{
 					$('#pagenav').removeClass('scrollednav');
+					$('.top-bar, .top-bar .name h1, .top-bar-section li a:not(.button), .top-bar .name').removeClass('smalltopbar');
 					
 				};
 			}

@@ -261,8 +261,8 @@ header#pagenav {
   top:0;
   z-index:99;
   width:100%;
-  border-bottom:1px solid rgba(218,223,227,0.4);
-  background:rgba(218,223,227,0.1);
+  border-bottom:1px solid rgba(218,223,227,0.1);
+  /*background:rgba(218,223,227,0.2);*/
   -webkit-transition: background 0.5s linear, border 0.8s linear;
   -moz-transition: background 0.5s linear, border 0.8s linear;
   -ms-transition: background 0.5s linear, border 0.8s linear;
