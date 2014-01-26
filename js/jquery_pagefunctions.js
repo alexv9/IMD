@@ -198,7 +198,7 @@ $(document).ready(function() {
 	
 	$("#slider1").on("after-slide-change.fndtn.orbit", function(event, orbit) {
 
-		var slideDescriptions = $('.slide-descriptions .slide-description');
+		var slideDescriptions = $('.slide-description');
 
 		slideDescriptions.removeClass('active');
 		slideDescriptions.eq(orbit.slide_number).addClass('active');
