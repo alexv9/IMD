@@ -101,11 +101,13 @@ $(document).ready(function() {
 			if ($("#header").hasClass("has-bigstage")) {
 				if(scroll >=660){
 					$('#pagenav').addClass('scrollednav');
+					$('.top-bar, .top-bar .name h1, .top-bar-section li a:not(.button), .top-bar .name').addClass('smalltopbar');
 	
 				}
 				
 				if (scroll <=0) {
 					$('#pagenav').removeClass('scrollednav');
+					$('.top-bar, .top-bar .name h1, .top-bar-section li a:not(.button), .top-bar .name').removeClass('smalltopbar');
 				} 
 			// If header is a regular stage 
 			} else {
@@ -123,6 +125,8 @@ $(document).ready(function() {
 	// Navbar change color on scroll after stage: Mobile header on click -- marco --
 	$(".menu-icon a").click(function() {
 		var scroll = $(document).scrollTop();
+
+		$('.top-bar').removeClass('smalltopbar');
 
 		if(open == false){
 				$("#pagenav").addClass("scrollednav");

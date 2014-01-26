@@ -5902,7 +5902,7 @@ a.close {
   overflow: hidden;
   width: 100%;
   z-index: -1;
-  background: #2c323d; }
+  background: #272f3d; }
 
 #stagebg img {
   max-width: inherit; }
@@ -5911,7 +5911,7 @@ a.close {
   height: 540px; }
 
 #stagebg .wrapper {
-  background: #2c323d;
+  background: #272f3d;
   height: 100%; }
 
 #content {
@@ -5926,7 +5926,6 @@ a.close {
 header#pagenav {
   position: fixed;
   top: 0;
-  /*padding:26px 0;*/
   z-index: 99;
   width: 100%;
   border-bottom: 1px solid rgba(218, 223, 227, 0.4);
@@ -5955,17 +5954,20 @@ header#pagenav a {
   margin-bottom: 60px; }
 
 #content .row, #mcfooter .row {
-  padding-bottom: 40px; }
+  padding-bottom: 2.5rem; }
 
 #mcfooter .row:last-child {
   padding-bottom: 0; }
 
 #content .section-teaser {
   text-align: center;
-  padding: 3.75rem 0; }
+  padding: 6.25rem 0 3.75rem 0; }
 
 #content .section-teaser h2 {
   color: #bec3c7; }
+
+.lightgraybg #content .section-teaser h2 {
+  color: #949a9e; }
 
 #content .section-teaser p {
   max-width: 540px;
@@ -5990,7 +5992,7 @@ header#pagenav a {
 #content .splitter {
   height: 580px;
   overflow: hidden;
-  background: #2c323d;
+  background: #272f3d;
   position: relative; }
 
 #content .splitter .splitter_cnt {
@@ -6017,9 +6019,9 @@ header#pagenav a {
   left: -9999px;
   right: -9999px;
   margin: auto;
-  filter: alpha(opacity=50);
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
-  opacity: .70; }
+  filter: alpha(opacity=60);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.6);
+  opacity: .60; }
 
 #content .splitter p .cit, #content .splitter p .splittercit-autor {
   max-width: 800px;
@@ -6207,6 +6209,31 @@ table.shortinfotable tr th, table.shortinfotable tr td {
   height: 0.75rem; }
 
 /*Top Bar*/
+.top-bar, .top-bar .name h1, .top-bar-section li a:not(.button), .top-bar .name {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.top-bar.smalltopbar, .top-bar .name h1.smalltopbar, .top-bar-section li a:not(.button).smalltopbar, .top-bar .name.smalltopbar {
+  height: 66px;
+  line-height: 66px; }
+
+/*
+.top-bar {
+  height:66px;
+  line-height:66px;
+}
+.top-bar .name h1 {
+  line-height:66px;
+}
+.top-bar-section li a:not(.button) {
+  line-height:66px;
+}
+.top-bar .name {
+  line-height:66px;
+  height:66px;
+}*/
 .top-bar-section li a:not(.button) {
   padding: 0 12px !important; }
 
@@ -6506,9 +6533,6 @@ Last changes: 2014/01/04
     position: relative; }
 
   /* Navbar */
-  .top-bar-section li a:not(.button) {
-    line-height: 103px; }
-
   .top-bar-section li .dropdown a:not(.button) {
     line-height: 16px; }
 
