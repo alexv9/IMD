@@ -5902,7 +5902,7 @@ a.close {
   overflow: hidden;
   width: 100%;
   z-index: -1;
-  background: black; }
+  background: #2c323d; }
 
 #stagebg img {
   max-width: inherit; }
@@ -5911,7 +5911,7 @@ a.close {
   height: 540px; }
 
 #stagebg .wrapper {
-  background: black;
+  background: #2c323d;
   height: 100%; }
 
 #content {
@@ -5990,7 +5990,7 @@ header#pagenav a {
 #content .splitter {
   height: 580px;
   overflow: hidden;
-  background: black;
+  background: #2c323d;
   position: relative; }
 
 #content .splitter .splitter_cnt {
