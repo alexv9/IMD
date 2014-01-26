@@ -290,7 +290,10 @@ header#pagenav a {
   font-size:rem-calc(18);
   margin-bottom: 60px;
 }
-#content .row, #mcfooter .row {
+#content .row {
+  padding-bottom:rem-calc(100);
+}
+#mcfooter .row {
   padding-bottom:rem-calc(40);
 }
 #mcfooter .row:last-child {
@@ -298,13 +301,16 @@ header#pagenav a {
 }
 #content .section-teaser {
   text-align:center;
-  padding:rem-calc(100) 0 rem-calc(60) 0;
+  padding:rem-calc(100) 0 rem-calc(80) 0;
 }
 #content .section-teaser h2 {
-  color:#bec3c7;
+  color:#303743;
 }
-.lightgraybg #content .section-teaser h2 {
-  color:#949a9e;
+#content .lightgraybg .section-teaser h2 {
+  color:#22262d;
+}
+#content .lightgraybg p {
+  color:#485262;
 }
 #content .section-teaser p {
   max-width:540px;
