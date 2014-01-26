@@ -6395,6 +6395,9 @@ Page setup
   h2 {
     font-size: 2.25rem; }
 
+  .top-bar-section li a:not(.button) {
+    line-height: 100px; }
+
   /* Header */
   li.name h1 a span {
     margin-left: 8px; }
